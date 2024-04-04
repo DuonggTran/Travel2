@@ -151,6 +151,18 @@
     <Compile Include="UCDanhGia.Designer.cs">
       <DependentUpon>UCDanhGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCKhachSan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCKhachSan.Designer.cs">
+      <DependentUpon>UCKhachSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPhongKhachSan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPhongKhachSan.Designer.cs">
+      <DependentUpon>UCPhongKhachSan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCThongTinKhachSan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -223,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCDanhGia.resx">
       <DependentUpon>UCDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCKhachSan.resx">
+      <DependentUpon>UCKhachSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPhongKhachSan.resx">
+      <DependentUpon>UCPhongKhachSan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCThongTinKhachSan.resx">
       <DependentUpon>UCThongTinKhachSan.cs</DependentUpon>

@@ -26,3 +26,33 @@ D:\HK2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Trav
 D:\HK2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuAdmin.resources
 D:\HK2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuUser.resources
 D:\HK2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongKhachSanAdmin.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.exe.config
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.exe
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.pdb
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Guna.UI2.dll
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.AssemblyReference.cache
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachHang.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachSanAdmin.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongCuaKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongKhachSanAdmin.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DangNhap.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DangThongTinKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DanhGia.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.Properties.Resources.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ThemPhongChoKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChu.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuAdmin.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuUser.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCDanhGia.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCThongTinKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCThongTinPhongCuaKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.VietDanhGia.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.XemPhongCuaKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.GenerateResource.cache
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CoreCompileInputs.cache
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CopyComplete
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.exe
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.pdb
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCKhachSan.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCPhongKhachSan.resources

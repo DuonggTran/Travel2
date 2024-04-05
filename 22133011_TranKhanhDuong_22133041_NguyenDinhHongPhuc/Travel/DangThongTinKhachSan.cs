@@ -50,7 +50,7 @@ namespace Travel
             opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
             if (opf.ShowDialog() == DialogResult.OK)
             {
-                pic_Anh2.Image = Image.FromFile(opf.FileName);
+                pic_Anh1.Image = Image.FromFile(opf.FileName);
             }
         }
         private void btnThemAnh3_Click(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace Travel
             opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
             if (opf.ShowDialog() == DialogResult.OK)
             {
-                pic_Anh3.Image = Image.FromFile(opf.FileName);
+                pic_Anh1.Image = Image.FromFile(opf.FileName);
             }
         }
         private void btnThemAnh4_Click(object sender, EventArgs e)

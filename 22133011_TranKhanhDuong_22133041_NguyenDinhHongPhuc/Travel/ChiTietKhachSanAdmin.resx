@@ -121,7 +121,7 @@
     <value>Royal Family Hotel nằm tại thành phố Đà Nẵng đồng thời cung cấp các phòng nghỉ trang nhã và thoải mái với truy cập WiFi miễn phí trong toàn bộ khuôn viên. Khách sạn chỉ cách Cầu Sông Hàn 2,1 km và cách Bảo tàng Chăm 2,3 km. Các phòng máy lạnh tại đây được trang bị sàn lát gạch, bàn làm việc, tủ quần áo, ấm đun nước điện, minibar và truyền hình cáp/vệ tinh màn hình phẳng. </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBoxAnh1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pic_Anh1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERET
         FhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4e

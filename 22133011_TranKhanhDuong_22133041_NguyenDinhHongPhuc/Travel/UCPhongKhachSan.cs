@@ -16,5 +16,11 @@ namespace Travel
         {
             InitializeComponent();
         }
+
+        private void linklblChiTietPhong_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ChiTietPhongKhachSanAdmin f = new ChiTietPhongKhachSanAdmin();
+            f.ShowDialog();
+        }
     }
 }

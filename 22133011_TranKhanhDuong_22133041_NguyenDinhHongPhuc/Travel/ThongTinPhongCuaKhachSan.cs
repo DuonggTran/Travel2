@@ -27,8 +27,9 @@ namespace GUI
         public string hutThuoc2;
         public byte[] hinhAnh1;
         public byte[] hinhAnh2;
+        public int iDKhachSan;
         public ThongTinPhongCuaKhachSan() { }
-        public ThongTinPhongCuaKhachSan(string tenPhong, string kichThuocPhong, string giaPhong, string tienNghiPhongTam1, string tienNghiPhongTam2, string tienNghiPhongTam3, string tienNghiPhongTam4, string huongTamNhin1, string huongTamNhin2, string tienNghiPhong1, string tienNghiPhong2, string tienNghiPhong3, string tienNghiPhong4, string tienNghiPhong5, string tienNghiPhong6, string hutThuoc1, string hutThuoc2, byte[] hinhAnh1, byte[] hinhAnh2)
+        public ThongTinPhongCuaKhachSan(string tenPhong, string kichThuocPhong, string giaPhong, string tienNghiPhongTam1, string tienNghiPhongTam2, string tienNghiPhongTam3, string tienNghiPhongTam4, string huongTamNhin1, string huongTamNhin2, string tienNghiPhong1, string tienNghiPhong2, string tienNghiPhong3, string tienNghiPhong4, string tienNghiPhong5, string tienNghiPhong6, string hutThuoc1, string hutThuoc2, byte[] hinhAnh1, byte[] hinhAnh2, int iDKhachSan)
         {
             this.tenPhong = tenPhong;
             this.kichThuocPhong = kichThuocPhong;
@@ -49,6 +50,7 @@ namespace GUI
             this.hutThuoc2 = hutThuoc2;
             this.hinhAnh1 = hinhAnh1;
             this.hinhAnh2 = hinhAnh2;
+            this.iDKhachSan = iDKhachSan;
         }
         public string TenPhong
         {
@@ -144,6 +146,11 @@ namespace GUI
         {
             get { return hinhAnh2; }
             set { hinhAnh2 = value; }
+        }
+        public int IDKS
+        {
+            get { return iDKhachSan; }
+            set { iDKhachSan = value; }
         }
     }
 }

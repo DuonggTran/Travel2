@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +18,21 @@ namespace Travel
         {
             InitializeComponent();
         }
-        string loai, mota;
-        public void LoadDataTimKiem(FlowLayoutPanel flpTrangChuAdmin, int dd)
+        public string loai, mota;
+        private void btnChiTiet_Click(object sender, EventArgs e)
+        {
+            ThongTinKhachSan kSan = new ThongTinKhachSan();
+            kSan.TenKhachSan = txtTenKhachSan.Text;
+            kSan.DiaDiemKhachSan = txtDiaDiemKhachSan.Text;
+            kSan.Loai = loai;
+            kSan.MoTa = mota;          
+            this.Hide();
+            ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);
+            ThemPhongChoKhachSan k = new ThemPhongChoKhachSan(iDKhachSan);
+            f.ShowDialog();                      
+        }
+        public int iDKhachSan;
+        public void LoadDataTimKiem(FlowLayoutPanel flpTrangChuAdmin, int id)
         {
             List<UCKhachSan> khachSanList = new List<UCKhachSan>();
             try
@@ -27,11 +41,12 @@ namespace Travel
                 connection.Open();
                 string query = "SELECT* FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@IDChuKhachSan", dd);
+                command.Parameters.AddWithValue("@IDChuKhachSan", id);
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     UCKhachSan uc = new UCKhachSan();
+                    uc.iDKhachSan = reader.GetInt32(0);                    
                     uc.txtTenKhachSan.Text = reader[1].ToString();
                     uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
                     uc.loai = reader[3].ToString();

@@ -51,6 +51,7 @@
             this.linklblChiTietPhong.TabIndex = 5;
             this.linklblChiTietPhong.TabStop = true;
             this.linklblChiTietPhong.Text = "Phòng \"ABCDEF\"";
+            this.linklblChiTietPhong.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblChiTietPhong_LinkClicked);
             // 
             // pnl2
             // 

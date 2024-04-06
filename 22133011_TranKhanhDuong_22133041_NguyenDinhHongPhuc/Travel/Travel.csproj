@@ -187,6 +187,9 @@
     <Compile Include="XemPhongCuaKhachSan.Designer.cs">
       <DependentUpon>XemPhongCuaKhachSan.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietAnh.resx">
+      <DependentUpon>ChiTietAnh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChiTietKhachHang.resx">
       <DependentUpon>ChiTietKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhGia.resx">
       <DependentUpon>DanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSuBookPhong.resx">
+      <DependentUpon>LichSuBookPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

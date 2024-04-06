@@ -122,10 +122,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1293, 12);
+            this.pictureBox1.Image = global::Travel.Properties.Resources.AnhDangNhap;
+            this.pictureBox1.Location = new System.Drawing.Point(1293, 23);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(101, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
@@ -167,6 +169,7 @@
             this.Controls.Add(this.pnlTrangChu);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrangChuUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChuUser";
             this.pnlTrangChu.ResumeLayout(false);
             this.pnlTrangChu.PerformLayout();

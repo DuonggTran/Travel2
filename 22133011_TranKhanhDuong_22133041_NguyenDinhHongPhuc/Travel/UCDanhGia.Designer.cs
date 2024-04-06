@@ -35,8 +35,8 @@
             this.btnHuuIch = new System.Windows.Forms.Button();
             this.richTextBoxDanhGia = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
             this.txtTenKhachHang = new System.Windows.Forms.TextBox();
+            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -114,18 +114,8 @@
             this.panel1.Controls.Add(this.txtLoaiPhong);
             this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 186);
+            this.panel1.Size = new System.Drawing.Size(210, 186);
             this.panel1.TabIndex = 2;
-            // 
-            // txtLoaiPhong
-            // 
-            this.txtLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiPhong.Location = new System.Drawing.Point(23, 76);
-            this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.Size = new System.Drawing.Size(95, 20);
-            this.txtLoaiPhong.TabIndex = 47;
-            this.txtLoaiPhong.Text = "Giường đôi";
             // 
             // txtTenKhachHang
             // 
@@ -136,6 +126,16 @@
             this.txtTenKhachHang.Size = new System.Drawing.Size(153, 23);
             this.txtTenKhachHang.TabIndex = 48;
             this.txtTenKhachHang.Text = "Tên khách hàng";
+            // 
+            // txtLoaiPhong
+            // 
+            this.txtLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoaiPhong.Location = new System.Drawing.Point(23, 76);
+            this.txtLoaiPhong.Name = "txtLoaiPhong";
+            this.txtLoaiPhong.Size = new System.Drawing.Size(95, 20);
+            this.txtLoaiPhong.TabIndex = 47;
+            this.txtLoaiPhong.Text = "Giường đôi";
             // 
             // UCDanhGia
             // 

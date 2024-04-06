@@ -8,6 +8,7 @@ namespace GUI
 {
     public class ThongTinPhongCuaKhachSan
     {
+        public int iDPhong;
         public string tenPhong;
         public string kichThuocPhong;
         public string giaPhong;
@@ -152,5 +153,10 @@ namespace GUI
             get { return iDKhachSan; }
             set { iDKhachSan = value; }
         }
+        public int IDPhong
+        {
+            get { return iDPhong; }
+            set { iDPhong = value; }
+        }    
     }
 }

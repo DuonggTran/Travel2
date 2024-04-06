@@ -14,11 +14,12 @@ namespace Travel
 {
     public partial class UCKhachSan : UserControl
     {
+        public string loai, mota;
+        public int iDKhachSan;
         public UCKhachSan()
         {
             InitializeComponent();
         }
-        public string loai, mota;
         private void btnChiTiet_Click(object sender, EventArgs e)
         {
             ThongTinKhachSan kSan = new ThongTinKhachSan();
@@ -31,7 +32,6 @@ namespace Travel
             ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);          
             f.ShowDialog();                      
         }
-        public int iDKhachSan;
         public void LoadDataTimKiem(FlowLayoutPanel flpTrangChuAdmin, int id)
         {
             List<UCKhachSan> khachSanList = new List<UCKhachSan>();

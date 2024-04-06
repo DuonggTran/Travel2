@@ -23,7 +23,6 @@ namespace Travel
         {
             InitializeComponent();
         }
-
         private void btnDangBai_Click(object sender, EventArgs e)
         {
             this.Hide();

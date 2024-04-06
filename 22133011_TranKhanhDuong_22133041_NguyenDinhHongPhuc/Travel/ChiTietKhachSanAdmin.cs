@@ -13,11 +13,11 @@ namespace Travel
 {
     public partial class ChiTietKhachSanAdmin : Form
     {
+        public int iD;
         public ChiTietKhachSanAdmin()
         {
             InitializeComponent();
         }
-        public int iD;
         public ChiTietKhachSanAdmin(ThongTinKhachSan kSan)
         {
             InitializeComponent();

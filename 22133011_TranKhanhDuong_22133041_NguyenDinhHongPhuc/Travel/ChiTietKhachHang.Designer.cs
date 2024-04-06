@@ -210,6 +210,7 @@
             this.Controls.Add(this.lblTenKhachHang);
             this.Controls.Add(this.lblThongTinLienLac);
             this.Name = "ChiTietKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietKhachHang";
             this.ResumeLayout(false);
             this.PerformLayout();

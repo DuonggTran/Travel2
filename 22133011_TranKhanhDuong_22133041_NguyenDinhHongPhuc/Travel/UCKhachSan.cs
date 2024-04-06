@@ -22,13 +22,13 @@ namespace Travel
         private void btnChiTiet_Click(object sender, EventArgs e)
         {
             ThongTinKhachSan kSan = new ThongTinKhachSan();
+            kSan.iDKhachSan = iDKhachSan;
             kSan.TenKhachSan = txtTenKhachSan.Text;
             kSan.DiaDiemKhachSan = txtDiaDiemKhachSan.Text;
             kSan.Loai = loai;
             kSan.MoTa = mota;          
             this.Hide();
-            ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);
-            ThemPhongChoKhachSan k = new ThemPhongChoKhachSan(iDKhachSan);
+            ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);          
             f.ShowDialog();                      
         }
         public int iDKhachSan;
@@ -46,7 +46,7 @@ namespace Travel
                 while (reader.Read())
                 {
                     UCKhachSan uc = new UCKhachSan();
-                    uc.iDKhachSan = reader.GetInt32(0);                    
+                    uc.iDKhachSan = (int)reader[0];
                     uc.txtTenKhachSan.Text = reader[1].ToString();
                     uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
                     uc.loai = reader[3].ToString();

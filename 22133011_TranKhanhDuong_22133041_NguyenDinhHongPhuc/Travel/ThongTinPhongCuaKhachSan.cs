@@ -147,7 +147,7 @@ namespace GUI
             get { return hinhAnh2; }
             set { hinhAnh2 = value; }
         }
-        public int IDKS
+        public int IDKhachSan
         {
             get { return iDKhachSan; }
             set { iDKhachSan = value; }

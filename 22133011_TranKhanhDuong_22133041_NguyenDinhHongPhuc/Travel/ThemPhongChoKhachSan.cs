@@ -15,18 +15,17 @@ namespace Travel
     public partial class ThemPhongChoKhachSan : Form
     {
         SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
-        ThongTinPhongCuaKhachSanDAO kSanDAO = new ThongTinPhongCuaKhachSanDAO();
-        ThongTinPhongCuaKhachSan kSan = new ThongTinPhongCuaKhachSan();
+        ThongTinPhongCuaKhachSanDAO kSanDAO = new ThongTinPhongCuaKhachSanDAO();      
         DataConnection dB = new DataConnection();
         public int idKhachSan;
         public ThemPhongChoKhachSan()
         {
             InitializeComponent();
         }
-        public ThemPhongChoKhachSan(int iDKhachSan)
+        public ThemPhongChoKhachSan(int id)
         {
             InitializeComponent();
-            idKhachSan = iDKhachSan;
+            idKhachSan = id;
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {                     

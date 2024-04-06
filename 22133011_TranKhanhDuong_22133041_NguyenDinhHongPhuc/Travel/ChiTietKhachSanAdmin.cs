@@ -17,6 +17,7 @@ namespace Travel
         {
             InitializeComponent();
         }
+        public int iD;
         public ChiTietKhachSanAdmin(ThongTinKhachSan kSan)
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace Travel
             txtDiaDiem.Text = kSan.DiaDiemKhachSan;
             txtLoai.Text = kSan.Loai;
             richTextBoxMoTa.Text = kSan.MoTa;
+            iD = kSan.IDKhachSan;
         }
         private void btnSuaAnh1_Click(object sender, EventArgs e)
         {
@@ -63,7 +65,7 @@ namespace Travel
         }
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
-            ThemPhongChoKhachSan f = new ThemPhongChoKhachSan();
+            ThemPhongChoKhachSan f = new ThemPhongChoKhachSan(iD);
             f.ShowDialog();
         }
     }

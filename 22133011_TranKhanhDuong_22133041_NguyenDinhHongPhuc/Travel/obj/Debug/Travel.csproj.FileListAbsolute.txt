@@ -88,3 +88,5 @@ D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky\Travel2\22133011_TranKhanhDu
 D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.pdb
 D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietAnh.resources
 D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.LichSuBookPhong.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietAnh.resources
+C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.LichSuBookPhong.resources

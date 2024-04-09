@@ -25,7 +25,7 @@ namespace Travel.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-T6IJN963;Initial Catalog=DoAnCuoiKy;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DUONGTRAN;Initial Catalog=DoAnCuoiKy;Integrated Security=True")]
         public string cnnStr {
             get {
                 return ((string)(this["cnnStr"]));

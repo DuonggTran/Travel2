@@ -268,6 +268,7 @@
             this.btnLuu.Size = new System.Drawing.Size(140, 46);
             this.btnLuu.TabIndex = 130;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -290,6 +291,7 @@
             this.btnXoa.Size = new System.Drawing.Size(148, 46);
             this.btnXoa.TabIndex = 131;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // flpTrangChuAdmin
             // 
@@ -385,6 +387,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1707, 690);
             this.Controls.Add(this.flpTrangChuAdmin);
             this.Controls.Add(this.btnXoa);
@@ -405,6 +408,8 @@
             this.Controls.Add(this.pic_Anh1);
             this.Controls.Add(this.richTextBoxMoTa);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChiTietKhachSanAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietKhachSanAdmin";

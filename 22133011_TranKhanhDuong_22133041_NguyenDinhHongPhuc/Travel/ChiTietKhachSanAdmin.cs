@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,9 @@ namespace Travel
 {
     public partial class ChiTietKhachSanAdmin : Form
     {
+        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
+        ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
+        DataConnection dB = new DataConnection();      
         public int iD;
         public ChiTietKhachSanAdmin()
         {
@@ -67,6 +71,16 @@ namespace Travel
         {
             ThemPhongChoKhachSan f = new ThemPhongChoKhachSan(iD);
             f.ShowDialog();
+        }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            ThongTinKhachSan kSan = new ThongTinKhachSan(txtTenKhachSan.Text, txtDiaDiem.Text, txtLoai.Text, richTextBoxMoTa.Text, null, null, null, null, iD);
+            kSanDAO.Xoa(kSan, dB);            
+        }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            ThongTinKhachSan kSan = new ThongTinKhachSan(txtTenKhachSan.Text, txtDiaDiem.Text, txtLoai.Text, richTextBoxMoTa.Text, null, null, null, null, iD);
+            kSanDAO.Sua(kSan, dB);            
         }
     }
 }

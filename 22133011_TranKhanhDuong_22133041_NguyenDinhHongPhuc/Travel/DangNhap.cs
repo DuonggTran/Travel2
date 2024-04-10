@@ -11,6 +11,10 @@ namespace Travel
         DataConnection dB = new DataConnection();
         TaiKhoan tK = new TaiKhoan();
         TaiKhoanDAO tKDao = new TaiKhoanDAO();
+        public DangNhap()
+        {
+            InitializeComponent();
+        }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string LoaiTaiKhoan = check;
@@ -40,7 +44,6 @@ namespace Travel
                 txtMatKhau.ResetText();
                 MessageBox.Show("Loại tài khoản của bạn chưa chính xác!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             }
-
         }       
         private void chkAccAdmin_CheckedChanged(object sender, EventArgs e)
         {
@@ -55,10 +58,6 @@ namespace Travel
             {
                 check = "user";
             }
-        }
-        public DangNhap()
-        {
-            InitializeComponent();
-        }
+        } 
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietKhachSan));
-            this.txtLoaiPhong = new System.Windows.Forms.Label();
-            this.txtDiaDiem = new System.Windows.Forms.Label();
+            this.lblLoai = new System.Windows.Forms.Label();
+            this.lblDiaDiem = new System.Windows.Forms.Label();
             this.pictureBoxLoaiPhong = new System.Windows.Forms.PictureBox();
             this.pictureBoxDiaDiem = new System.Windows.Forms.PictureBox();
             this.btnXemPhongTrong = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -49,23 +49,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtLoaiPhong
+            // lblLoai
             // 
-            this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiPhong.Location = new System.Drawing.Point(346, 538);
-            this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.Size = new System.Drawing.Size(141, 52);
-            this.txtLoaiPhong.TabIndex = 112;
-            this.txtLoaiPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoai.Location = new System.Drawing.Point(346, 538);
+            this.lblLoai.Name = "lblLoai";
+            this.lblLoai.Size = new System.Drawing.Size(141, 52);
+            this.lblLoai.TabIndex = 112;
+            this.lblLoai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtDiaDiem
+            // lblDiaDiem
             // 
-            this.txtDiaDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaDiem.Location = new System.Drawing.Point(73, 538);
-            this.txtDiaDiem.Name = "txtDiaDiem";
-            this.txtDiaDiem.Size = new System.Drawing.Size(141, 52);
-            this.txtDiaDiem.TabIndex = 111;
-            this.txtDiaDiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDiaDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaDiem.Location = new System.Drawing.Point(73, 538);
+            this.lblDiaDiem.Name = "lblDiaDiem";
+            this.lblDiaDiem.Size = new System.Drawing.Size(141, 52);
+            this.lblDiaDiem.TabIndex = 111;
+            this.lblDiaDiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBoxLoaiPhong
             // 
@@ -189,8 +189,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(863, 688);
-            this.Controls.Add(this.txtLoaiPhong);
-            this.Controls.Add(this.txtDiaDiem);
+            this.Controls.Add(this.lblLoai);
+            this.Controls.Add(this.lblDiaDiem);
             this.Controls.Add(this.pictureBoxLoaiPhong);
             this.Controls.Add(this.pictureBoxDiaDiem);
             this.Controls.Add(this.btnXemPhongTrong);
@@ -219,8 +219,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label txtLoaiPhong;
-        private System.Windows.Forms.Label txtDiaDiem;
+        private System.Windows.Forms.Label lblLoai;
+        private System.Windows.Forms.Label lblDiaDiem;
         private System.Windows.Forms.PictureBox pictureBoxLoaiPhong;
         private System.Windows.Forms.PictureBox pictureBoxDiaDiem;
         private Guna.UI2.WinForms.Guna2GradientButton btnXemPhongTrong;

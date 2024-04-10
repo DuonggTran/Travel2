@@ -41,6 +41,7 @@
             this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
             this.flpPhongKhachSan = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucPhongKhachSan1 = new Travel.UCPhongKhachSan();
             this.pictureBoxLoaiPhong = new System.Windows.Forms.PictureBox();
             this.pictureBoxDiaDiem = new System.Windows.Forms.PictureBox();
             this.pic_Anh3 = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,6 @@
             this.pic_Anh4 = new System.Windows.Forms.PictureBox();
             this.pic_Anh1 = new System.Windows.Forms.PictureBox();
             this.btnLamMoi = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ucPhongKhachSan1 = new Travel.UCPhongKhachSan();
             this.flpPhongKhachSan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoaiPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiaDiem)).BeginInit();
@@ -87,7 +87,6 @@
             this.richTextBoxMoTa.Location = new System.Drawing.Point(9, 473);
             this.richTextBoxMoTa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBoxMoTa.Name = "richTextBoxMoTa";
-            this.richTextBoxMoTa.ReadOnly = true;
             this.richTextBoxMoTa.Size = new System.Drawing.Size(839, 130);
             this.richTextBoxMoTa.TabIndex = 118;
             this.richTextBoxMoTa.Text = resources.GetString("richTextBoxMoTa.Text");
@@ -307,6 +306,14 @@
             this.flpPhongKhachSan.Size = new System.Drawing.Size(802, 595);
             this.flpPhongKhachSan.TabIndex = 132;
             // 
+            // ucPhongKhachSan1
+            // 
+            this.ucPhongKhachSan1.Location = new System.Drawing.Point(5, 5);
+            this.ucPhongKhachSan1.Margin = new System.Windows.Forms.Padding(5);
+            this.ucPhongKhachSan1.Name = "ucPhongKhachSan1";
+            this.ucPhongKhachSan1.Size = new System.Drawing.Size(792, 148);
+            this.ucPhongKhachSan1.TabIndex = 0;
+            // 
             // pictureBoxLoaiPhong
             // 
             this.pictureBoxLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -401,14 +408,6 @@
             this.btnLamMoi.TabIndex = 133;
             this.btnLamMoi.Text = "Cập Nhật";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // ucPhongKhachSan1
-            // 
-            this.ucPhongKhachSan1.Location = new System.Drawing.Point(5, 5);
-            this.ucPhongKhachSan1.Margin = new System.Windows.Forms.Padding(5);
-            this.ucPhongKhachSan1.Name = "ucPhongKhachSan1";
-            this.ucPhongKhachSan1.Size = new System.Drawing.Size(792, 148);
-            this.ucPhongKhachSan1.TabIndex = 0;
             // 
             // ChiTietKhachSanAdmin
             // 

@@ -14,7 +14,7 @@ namespace Travel
 {
     public partial class UCKhachSan : UserControl
     {
-        public string loai, mota;
+        public string loai, moTa;
         public int iDKhachSan;
         public UCKhachSan()
         {
@@ -27,7 +27,7 @@ namespace Travel
             kSan.TenKhachSan = txtTenKhachSan.Text;
             kSan.DiaDiemKhachSan = txtDiaDiemKhachSan.Text;
             kSan.Loai = loai;
-            kSan.MoTa = mota;          
+            kSan.MoTa = moTa;          
             ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);          
             f.ShowDialog();   
         }
@@ -49,7 +49,7 @@ namespace Travel
                     uc.txtTenKhachSan.Text = reader[1].ToString();
                     uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
                     uc.loai = reader[3].ToString();
-                    uc.mota = reader[4].ToString();
+                    uc.moTa = reader[4].ToString();
                     khachSanList.Add(uc);
                 }
                 reader.Close();

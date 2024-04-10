@@ -134,6 +134,7 @@
             this.btnChiTiet.Size = new System.Drawing.Size(130, 45);
             this.btnChiTiet.TabIndex = 3;
             this.btnChiTiet.Text = "Chi tiết";
+            this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
             // 
             // UCThongTinKhachSan
             // 

@@ -90,3 +90,35 @@ D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky\Travel2\22133011_TranKhanhDu
 D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.LichSuBookPhong.resources
 C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietAnh.resources
 C:\Users\trank\OneDrive\Máy tính\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.LichSuBookPhong.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.exe.config
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.exe
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.pdb
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Guna.UI2.dll
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.AssemblyReference.cache
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietAnh.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachHang.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachSanAdmin.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongCuaKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongKhachSanAdmin.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DangNhap.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DangThongTinKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DanhGia.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.LichSuBookPhong.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.Properties.Resources.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ThemPhongChoKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChu.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuAdmin.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuUser.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCDanhGia.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCPhongKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCThongTinKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCThongTinPhongCuaKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.VietDanhGia.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.XemPhongCuaKhachSan.resources
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.GenerateResource.cache
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CoreCompileInputs.cache
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CopyComplete
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.exe
+D:\Học Thiệt\Lập trình Windows\Do An Cuoi Ky Test\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.pdb

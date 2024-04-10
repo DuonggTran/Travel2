@@ -1,7 +1,9 @@
-﻿using System;
+﻿using GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,33 @@ namespace Travel
 {
     public partial class TrangChuUser : Form
     {
+        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
+        ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
+        DataConnection dB = new DataConnection();
+        TaiKhoan tK = new TaiKhoan();
+        TaiKhoanDAO tKDAO = new TaiKhoanDAO();
         public TrangChuUser()
         {
             InitializeComponent();
+        }
+        public void LoadData()
+        {
+            tKDAO.load(tK, dB, "user");
+            flpTrangChu.Controls.Clear();
+            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            connection.Open();
+            int id = tK.ID;
+            string query = "SELECT* FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@IDChuKhachSan", id);
+            SqlDataReader reader = command.ExecuteReader();
+            UCThongTinKhachSan f = new UCThongTinKhachSan();
+            while (reader.Read())
+            {
+                f.LoadData(flpTrangChu, id);
+                break;
+            }
+            connection.Close();
         }
     }
 }

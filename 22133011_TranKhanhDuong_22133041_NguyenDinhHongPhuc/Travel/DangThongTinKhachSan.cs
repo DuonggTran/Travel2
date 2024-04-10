@@ -24,15 +24,12 @@ namespace Travel
             InitializeComponent();
         }
         private void btnDangBai_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+        {          
             tKDAO.load(tK, dB, "admin");
             ThongTinKhachSan kSan = new ThongTinKhachSan(txtTenKhachSan.Text, cboDiaDiem.Text, cboLoaiPhong.Text, txtMoTa.Text, null, null, null, null,tK.ID);
             kSanDAO.Them(kSan, dB);
             TrangChuAdmin f = new TrangChuAdmin();
-            f.ShowDialog();
-            f = null;
-            this.Close();
+            f.ShowDialog();          
         }
         private void btnThemAnh1_Click(object sender, EventArgs e)
         {

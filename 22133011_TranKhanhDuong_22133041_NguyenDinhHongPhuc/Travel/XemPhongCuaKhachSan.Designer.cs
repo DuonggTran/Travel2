@@ -31,17 +31,13 @@
             this.pnlTienDe = new System.Windows.Forms.Panel();
             this.btnTimKiemPhong = new System.Windows.Forms.Button();
             this.cboLoaiPhong = new System.Windows.Forms.ComboBox();
-            this.dateTimePickerNgayTra = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerNgayNhan = new System.Windows.Forms.DateTimePicker();
             this.lblLuongKhach = new System.Windows.Forms.Label();
-            this.lblNgayTraPhong = new System.Windows.Forms.Label();
-            this.lblNgayNhanPhong = new System.Windows.Forms.Label();
             this.lblPhong = new System.Windows.Forms.Label();
             this.flpTrangChuKhachSan = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucThongTinPhongCuaKhachSan4 = new Travel.UCThongTinPhongCuaKhachSan();
             this.ucThongTinPhongCuaKhachSan1 = new Travel.UCThongTinPhongCuaKhachSan();
             this.ucThongTinPhongCuaKhachSan2 = new Travel.UCThongTinPhongCuaKhachSan();
             this.ucThongTinPhongCuaKhachSan3 = new Travel.UCThongTinPhongCuaKhachSan();
-            this.ucThongTinPhongCuaKhachSan4 = new Travel.UCThongTinPhongCuaKhachSan();
             this.pnlTienDe.SuspendLayout();
             this.flpTrangChuKhachSan.SuspendLayout();
             this.SuspendLayout();
@@ -50,11 +46,7 @@
             // 
             this.pnlTienDe.Controls.Add(this.btnTimKiemPhong);
             this.pnlTienDe.Controls.Add(this.cboLoaiPhong);
-            this.pnlTienDe.Controls.Add(this.dateTimePickerNgayTra);
-            this.pnlTienDe.Controls.Add(this.dateTimePickerNgayNhan);
             this.pnlTienDe.Controls.Add(this.lblLuongKhach);
-            this.pnlTienDe.Controls.Add(this.lblNgayTraPhong);
-            this.pnlTienDe.Controls.Add(this.lblNgayNhanPhong);
             this.pnlTienDe.Controls.Add(this.lblPhong);
             this.pnlTienDe.Location = new System.Drawing.Point(2, 2);
             this.pnlTienDe.Name = "pnlTienDe";
@@ -64,7 +56,7 @@
             // btnTimKiemPhong
             // 
             this.btnTimKiemPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiemPhong.Location = new System.Drawing.Point(679, 77);
+            this.btnTimKiemPhong.Location = new System.Drawing.Point(220, 80);
             this.btnTimKiemPhong.Name = "btnTimKiemPhong";
             this.btnTimKiemPhong.Size = new System.Drawing.Size(108, 34);
             this.btnTimKiemPhong.TabIndex = 12;
@@ -73,55 +65,25 @@
             // 
             // cboLoaiPhong
             // 
+            this.cboLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoaiPhong.FormattingEnabled = true;
             this.cboLoaiPhong.Items.AddRange(new object[] {
             "Phong Giuong Doi",
             "Phong Giuong Don"});
-            this.cboLoaiPhong.Location = new System.Drawing.Point(535, 87);
+            this.cboLoaiPhong.Location = new System.Drawing.Point(16, 84);
             this.cboLoaiPhong.Name = "cboLoaiPhong";
-            this.cboLoaiPhong.Size = new System.Drawing.Size(121, 24);
+            this.cboLoaiPhong.Size = new System.Drawing.Size(188, 28);
             this.cboLoaiPhong.TabIndex = 11;
-            // 
-            // dateTimePickerNgayTra
-            // 
-            this.dateTimePickerNgayTra.Location = new System.Drawing.Point(276, 89);
-            this.dateTimePickerNgayTra.Name = "dateTimePickerNgayTra";
-            this.dateTimePickerNgayTra.Size = new System.Drawing.Size(245, 22);
-            this.dateTimePickerNgayTra.TabIndex = 10;
-            // 
-            // dateTimePickerNgayNhan
-            // 
-            this.dateTimePickerNgayNhan.Location = new System.Drawing.Point(13, 89);
-            this.dateTimePickerNgayNhan.Name = "dateTimePickerNgayNhan";
-            this.dateTimePickerNgayNhan.Size = new System.Drawing.Size(245, 22);
-            this.dateTimePickerNgayNhan.TabIndex = 9;
             // 
             // lblLuongKhach
             // 
             this.lblLuongKhach.AutoSize = true;
-            this.lblLuongKhach.Location = new System.Drawing.Point(532, 59);
+            this.lblLuongKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLuongKhach.Location = new System.Drawing.Point(12, 54);
             this.lblLuongKhach.Name = "lblLuongKhach";
-            this.lblLuongKhach.Size = new System.Drawing.Size(75, 16);
+            this.lblLuongKhach.Size = new System.Drawing.Size(93, 20);
             this.lblLuongKhach.TabIndex = 8;
             this.lblLuongKhach.Text = "Loại Phòng";
-            // 
-            // lblNgayTraPhong
-            // 
-            this.lblNgayTraPhong.AutoSize = true;
-            this.lblNgayTraPhong.Location = new System.Drawing.Point(273, 59);
-            this.lblNgayTraPhong.Name = "lblNgayTraPhong";
-            this.lblNgayTraPhong.Size = new System.Drawing.Size(99, 16);
-            this.lblNgayTraPhong.TabIndex = 6;
-            this.lblNgayTraPhong.Text = "Ngày trả phòng";
-            // 
-            // lblNgayNhanPhong
-            // 
-            this.lblNgayNhanPhong.AutoSize = true;
-            this.lblNgayNhanPhong.Location = new System.Drawing.Point(10, 59);
-            this.lblNgayNhanPhong.Name = "lblNgayNhanPhong";
-            this.lblNgayNhanPhong.Size = new System.Drawing.Size(113, 16);
-            this.lblNgayNhanPhong.TabIndex = 5;
-            this.lblNgayNhanPhong.Text = "Ngày nhận phòng";
             // 
             // lblPhong
             // 
@@ -144,33 +106,37 @@
             this.flpTrangChuKhachSan.Size = new System.Drawing.Size(794, 615);
             this.flpTrangChuKhachSan.TabIndex = 3;
             // 
+            // ucThongTinPhongCuaKhachSan4
+            // 
+            this.ucThongTinPhongCuaKhachSan4.Location = new System.Drawing.Point(3, 2);
+            this.ucThongTinPhongCuaKhachSan4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucThongTinPhongCuaKhachSan4.Name = "ucThongTinPhongCuaKhachSan4";
+            this.ucThongTinPhongCuaKhachSan4.Size = new System.Drawing.Size(791, 152);
+            this.ucThongTinPhongCuaKhachSan4.TabIndex = 3;
+            // 
             // ucThongTinPhongCuaKhachSan1
             // 
-            this.ucThongTinPhongCuaKhachSan1.Location = new System.Drawing.Point(3, 161);
+            this.ucThongTinPhongCuaKhachSan1.Location = new System.Drawing.Point(3, 158);
+            this.ucThongTinPhongCuaKhachSan1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucThongTinPhongCuaKhachSan1.Name = "ucThongTinPhongCuaKhachSan1";
             this.ucThongTinPhongCuaKhachSan1.Size = new System.Drawing.Size(791, 147);
             this.ucThongTinPhongCuaKhachSan1.TabIndex = 0;
             // 
             // ucThongTinPhongCuaKhachSan2
             // 
-            this.ucThongTinPhongCuaKhachSan2.Location = new System.Drawing.Point(3, 314);
+            this.ucThongTinPhongCuaKhachSan2.Location = new System.Drawing.Point(3, 309);
+            this.ucThongTinPhongCuaKhachSan2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucThongTinPhongCuaKhachSan2.Name = "ucThongTinPhongCuaKhachSan2";
             this.ucThongTinPhongCuaKhachSan2.Size = new System.Drawing.Size(791, 147);
             this.ucThongTinPhongCuaKhachSan2.TabIndex = 1;
             // 
             // ucThongTinPhongCuaKhachSan3
             // 
-            this.ucThongTinPhongCuaKhachSan3.Location = new System.Drawing.Point(3, 467);
+            this.ucThongTinPhongCuaKhachSan3.Location = new System.Drawing.Point(3, 460);
+            this.ucThongTinPhongCuaKhachSan3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucThongTinPhongCuaKhachSan3.Name = "ucThongTinPhongCuaKhachSan3";
             this.ucThongTinPhongCuaKhachSan3.Size = new System.Drawing.Size(791, 147);
             this.ucThongTinPhongCuaKhachSan3.TabIndex = 2;
-            // 
-            // ucThongTinPhongCuaKhachSan4
-            // 
-            this.ucThongTinPhongCuaKhachSan4.Location = new System.Drawing.Point(3, 3);
-            this.ucThongTinPhongCuaKhachSan4.Name = "ucThongTinPhongCuaKhachSan4";
-            this.ucThongTinPhongCuaKhachSan4.Size = new System.Drawing.Size(791, 152);
-            this.ucThongTinPhongCuaKhachSan4.TabIndex = 3;
             // 
             // XemPhongCuaKhachSan
             // 
@@ -185,6 +151,7 @@
             this.Name = "XemPhongCuaKhachSan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XemPhongCuaKhachSan";
+            this.Load += new System.EventHandler(this.XemPhongCuaKhachSan_Load);
             this.pnlTienDe.ResumeLayout(false);
             this.pnlTienDe.PerformLayout();
             this.flpTrangChuKhachSan.ResumeLayout(false);
@@ -197,11 +164,7 @@
         private System.Windows.Forms.Panel pnlTienDe;
         private System.Windows.Forms.Button btnTimKiemPhong;
         private System.Windows.Forms.ComboBox cboLoaiPhong;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNgayTra;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNgayNhan;
         private System.Windows.Forms.Label lblLuongKhach;
-        private System.Windows.Forms.Label lblNgayTraPhong;
-        private System.Windows.Forms.Label lblNgayNhanPhong;
         private System.Windows.Forms.Label lblPhong;
         private System.Windows.Forms.FlowLayoutPanel flpTrangChuKhachSan;
         private UCThongTinPhongCuaKhachSan ucThongTinPhongCuaKhachSan4;

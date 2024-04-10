@@ -41,6 +41,7 @@
             this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
             this.flpPhongKhachSan = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnLamMoi = new Guna.UI2.WinForms.Guna2GradientButton();
             this.ucPhongKhachSan1 = new Travel.UCPhongKhachSan();
             this.pictureBoxLoaiPhong = new System.Windows.Forms.PictureBox();
             this.pictureBoxDiaDiem = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,6 @@
             this.pic_Anh2 = new System.Windows.Forms.PictureBox();
             this.pic_Anh4 = new System.Windows.Forms.PictureBox();
             this.pic_Anh1 = new System.Windows.Forms.PictureBox();
-            this.btnLamMoi = new Guna.UI2.WinForms.Guna2GradientButton();
             this.flpPhongKhachSan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoaiPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiaDiem)).BeginInit();
@@ -306,12 +306,35 @@
             this.flpPhongKhachSan.Size = new System.Drawing.Size(802, 595);
             this.flpPhongKhachSan.TabIndex = 132;
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.Animated = true;
+            this.btnLamMoi.AutoRoundedCorners = true;
+            this.btnLamMoi.BorderRadius = 22;
+            this.btnLamMoi.BorderThickness = 1;
+            this.btnLamMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLamMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLamMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLamMoi.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLamMoi.FillColor = System.Drawing.Color.White;
+            this.btnLamMoi.FillColor2 = System.Drawing.Color.White;
+            this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnLamMoi.Location = new System.Drawing.Point(1268, 633);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(189, 46);
+            this.btnLamMoi.TabIndex = 133;
+            this.btnLamMoi.Text = "Cập Nhật";
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // ucPhongKhachSan1
             // 
-            this.ucPhongKhachSan1.Location = new System.Drawing.Point(5, 5);
+            this.ucPhongKhachSan1.Location = new System.Drawing.Point(6, 6);
             this.ucPhongKhachSan1.Margin = new System.Windows.Forms.Padding(5);
             this.ucPhongKhachSan1.Name = "ucPhongKhachSan1";
-            this.ucPhongKhachSan1.Size = new System.Drawing.Size(792, 148);
+            this.ucPhongKhachSan1.Size = new System.Drawing.Size(793, 148);
             this.ucPhongKhachSan1.TabIndex = 0;
             // 
             // pictureBoxLoaiPhong
@@ -341,36 +364,36 @@
             // pic_Anh3
             // 
             this.pic_Anh3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_Anh3.Image = global::Travel.Properties.Resources.HinhAnh2;
+            this.pic_Anh3.Image = global::Travel.Properties.Resources._3;
             this.pic_Anh3.Location = new System.Drawing.Point(620, 74);
             this.pic_Anh3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_Anh3.Name = "pic_Anh3";
             this.pic_Anh3.Size = new System.Drawing.Size(229, 145);
-            this.pic_Anh3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_Anh3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Anh3.TabIndex = 116;
             this.pic_Anh3.TabStop = false;
             // 
             // pic_Anh2
             // 
             this.pic_Anh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_Anh2.Image = global::Travel.Properties.Resources.HinhAnh2;
+            this.pic_Anh2.Image = global::Travel.Properties.Resources._1;
             this.pic_Anh2.Location = new System.Drawing.Point(385, 74);
             this.pic_Anh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_Anh2.Name = "pic_Anh2";
             this.pic_Anh2.Size = new System.Drawing.Size(229, 145);
-            this.pic_Anh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_Anh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Anh2.TabIndex = 115;
             this.pic_Anh2.TabStop = false;
             // 
             // pic_Anh4
             // 
             this.pic_Anh4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_Anh4.Image = global::Travel.Properties.Resources.HinhAnh2;
+            this.pic_Anh4.Image = global::Travel.Properties.Resources._4;
             this.pic_Anh4.Location = new System.Drawing.Point(385, 272);
             this.pic_Anh4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_Anh4.Name = "pic_Anh4";
             this.pic_Anh4.Size = new System.Drawing.Size(463, 150);
-            this.pic_Anh4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_Anh4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Anh4.TabIndex = 114;
             this.pic_Anh4.TabStop = false;
             // 
@@ -382,32 +405,9 @@
             this.pic_Anh1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_Anh1.Name = "pic_Anh1";
             this.pic_Anh1.Size = new System.Drawing.Size(369, 348);
-            this.pic_Anh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_Anh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Anh1.TabIndex = 113;
             this.pic_Anh1.TabStop = false;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Animated = true;
-            this.btnLamMoi.AutoRoundedCorners = true;
-            this.btnLamMoi.BorderRadius = 22;
-            this.btnLamMoi.BorderThickness = 1;
-            this.btnLamMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLamMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLamMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLamMoi.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLamMoi.FillColor = System.Drawing.Color.White;
-            this.btnLamMoi.FillColor2 = System.Drawing.Color.White;
-            this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
-            this.btnLamMoi.Location = new System.Drawing.Point(1268, 633);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(189, 46);
-            this.btnLamMoi.TabIndex = 133;
-            this.btnLamMoi.Text = "Cập Nhật";
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // ChiTietKhachSanAdmin
             // 

@@ -33,5 +33,10 @@ namespace Travel
             iD = kSan.IDKhachSan;
             iDChuKS = kSan.IDChuKhachSan;
         }
+        private void btnXemPhongTrong_Click(object sender, EventArgs e)
+        {
+            XemPhongCuaKhachSan f = new XemPhongCuaKhachSan(iD);
+            f.ShowDialog();
+        }
     }
 }

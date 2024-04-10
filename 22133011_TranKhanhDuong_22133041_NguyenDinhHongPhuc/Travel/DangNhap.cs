@@ -23,7 +23,7 @@ namespace Travel
             {
                 MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 this.Hide();
-                TrangChuAdmin f = new TrangChuAdmin();
+                TrangChuAdmin f = new TrangChuAdmin(tK.TenDangNhap);
                 f.ShowDialog();
                 f = null;
                 this.Close();
@@ -33,7 +33,7 @@ namespace Travel
             {
                 MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 this.Hide();
-                TrangChuUser f = new TrangChuUser();
+                TrangChuUser f = new TrangChuUser(tK.TenDangNhap);
                 f.ShowDialog();
                 f = null;
                 this.Close();

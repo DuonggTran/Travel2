@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flpTrangChu = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpTrangChuUser = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlTrangChu = new System.Windows.Forms.Panel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTenTaiKhoan = new System.Windows.Forms.Label();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cboDiaDiemTimKiem = new System.Windows.Forms.ComboBox();
             this.lblTenTrangChu = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTrangChu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // flpTrangChu
+            // flpTrangChuUser
             // 
-            this.flpTrangChu.AutoScroll = true;
-            this.flpTrangChu.Location = new System.Drawing.Point(3, 155);
-            this.flpTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flpTrangChu.Name = "flpTrangChu";
-            this.flpTrangChu.Size = new System.Drawing.Size(1451, 442);
-            this.flpTrangChu.TabIndex = 7;
+            this.flpTrangChuUser.AutoScroll = true;
+            this.flpTrangChuUser.Location = new System.Drawing.Point(3, 155);
+            this.flpTrangChuUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flpTrangChuUser.Name = "flpTrangChuUser";
+            this.flpTrangChuUser.Size = new System.Drawing.Size(1451, 442);
+            this.flpTrangChuUser.TabIndex = 7;
             // 
             // pnlTrangChu
             // 
-            this.pnlTrangChu.Controls.Add(this.guna2GradientButton1);
-            this.pnlTrangChu.Controls.Add(this.label1);
-            this.pnlTrangChu.Controls.Add(this.btnTimKiem);
             this.pnlTrangChu.Controls.Add(this.pictureBox1);
+            this.pnlTrangChu.Controls.Add(this.guna2GradientButton1);
+            this.pnlTrangChu.Controls.Add(this.lblTenTaiKhoan);
+            this.pnlTrangChu.Controls.Add(this.btnTimKiem);
             this.pnlTrangChu.Controls.Add(this.cboDiaDiemTimKiem);
             this.pnlTrangChu.Controls.Add(this.lblTenTrangChu);
             this.pnlTrangChu.Location = new System.Drawing.Point(3, 2);
@@ -79,23 +79,23 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.PeachPuff;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(1072, 90);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(1070, 90);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(171, 39);
             this.guna2GradientButton1.TabIndex = 27;
             this.guna2GradientButton1.Text = "Lịch sử book";
             // 
-            // label1
+            // lblTenTaiKhoan
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1249, 90);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 37);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "label1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTenTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenTaiKhoan.Location = new System.Drawing.Point(1252, 92);
+            this.lblTenTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTenTaiKhoan.Name = "lblTenTaiKhoan";
+            this.lblTenTaiKhoan.Size = new System.Drawing.Size(189, 37);
+            this.lblTenTaiKhoan.TabIndex = 26;
+            this.lblTenTaiKhoan.Text = "Tên Tài Khoản";
+            this.lblTenTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnTimKiem
             // 
@@ -113,23 +113,13 @@
             this.btnTimKiem.FillColor2 = System.Drawing.Color.PeachPuff;
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Location = new System.Drawing.Point(1072, 23);
+            this.btnTimKiem.Location = new System.Drawing.Point(1070, 23);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(169, 39);
             this.btnTimKiem.TabIndex = 20;
             this.btnTimKiem.Text = "Tìm kiếm";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Travel.Properties.Resources.AnhDangNhap;
-            this.pictureBox1.Location = new System.Drawing.Point(1293, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // cboDiaDiemTimKiem
             // 
@@ -160,17 +150,29 @@
             this.lblTenTrangChu.Text = "Travel\r\n";
             this.lblTenTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Travel.Properties.Resources._8;
+            this.pictureBox1.Location = new System.Drawing.Point(1298, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
             // TrangChuUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1457, 601);
-            this.Controls.Add(this.flpTrangChu);
+            this.Controls.Add(this.flpTrangChuUser);
             this.Controls.Add(this.pnlTrangChu);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrangChuUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChuUser";
+            this.Load += new System.EventHandler(this.TrangChuUser_Load);
             this.pnlTrangChu.ResumeLayout(false);
             this.pnlTrangChu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -180,13 +182,13 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flpTrangChu;
+        private System.Windows.Forms.FlowLayoutPanel flpTrangChuUser;
         private System.Windows.Forms.Panel pnlTrangChu;
         private Guna.UI2.WinForms.Guna2GradientButton btnTimKiem;
         private System.Windows.Forms.ComboBox cboDiaDiemTimKiem;
         private System.Windows.Forms.Label lblTenTrangChu;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTenTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

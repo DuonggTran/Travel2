@@ -30,30 +30,30 @@
         {
             this.btnThue = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label28 = new System.Windows.Forms.Label();
-            this.pictureBoxAnh2 = new System.Windows.Forms.PictureBox();
             this.lblHutThuoc = new System.Windows.Forms.Label();
             this.lblKichThuocPhong = new System.Windows.Forms.Label();
             this.lblTrongPhongTam = new System.Windows.Forms.Label();
             this.lblhuongTamNhin = new System.Windows.Forms.Label();
             this.lblTienNghiPhong = new System.Windows.Forms.Label();
-            this.pictureBoxAnh1 = new System.Windows.Forms.PictureBox();
-            this.lbTenPhong = new System.Windows.Forms.Label();
+            this.lblTenPhong = new System.Windows.Forms.Label();
             this.lbKichThuocPhong = new System.Windows.Forms.Label();
-            this.lbGiaPhong = new System.Windows.Forms.Label();
-            this.lbTienNghiPhongTam1 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhongTam3 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhongTam4 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhongTam2 = new System.Windows.Forms.Label();
-            this.lbHuongTamNhin1 = new System.Windows.Forms.Label();
-            this.lbHuongTamNhin2 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhong1 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhong2 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhong3 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhong4 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhong5 = new System.Windows.Forms.Label();
-            this.lbTienNghiPhong6 = new System.Windows.Forms.Label();
-            this.lbHutThuoc1 = new System.Windows.Forms.Label();
-            this.lbhutThuoc2 = new System.Windows.Forms.Label();
+            this.lblGiaPhong = new System.Windows.Forms.Label();
+            this.lblTienNghiPhongTam1 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhongTam3 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhongTam4 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhongTam2 = new System.Windows.Forms.Label();
+            this.lblHuongTamNhin1 = new System.Windows.Forms.Label();
+            this.lblHuongTamNhin2 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhong1 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhong2 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhong3 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhong4 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhong5 = new System.Windows.Forms.Label();
+            this.lblTienNghiPhong6 = new System.Windows.Forms.Label();
+            this.lblHutThuoc1 = new System.Windows.Forms.Label();
+            this.lblHutThuoc2 = new System.Windows.Forms.Label();
+            this.pictureBoxAnh2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAnh1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh1)).BeginInit();
             this.SuspendLayout();
@@ -89,16 +89,6 @@
             this.label28.Size = new System.Drawing.Size(110, 25);
             this.label28.TabIndex = 198;
             this.label28.Text = "Giá Phòng:";
-            // 
-            // pictureBoxAnh2
-            // 
-            this.pictureBoxAnh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh2.Location = new System.Drawing.Point(13, 349);
-            this.pictureBoxAnh2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxAnh2.Name = "pictureBoxAnh2";
-            this.pictureBoxAnh2.Size = new System.Drawing.Size(423, 336);
-            this.pictureBoxAnh2.TabIndex = 196;
-            this.pictureBoxAnh2.TabStop = false;
             // 
             // lblHutThuoc
             // 
@@ -155,152 +145,166 @@
             this.lblTienNghiPhong.TabIndex = 191;
             this.lblTienNghiPhong.Text = "Tiện nghi phòng:";
             // 
-            // pictureBoxAnh1
+            // lblTenPhong
             // 
-            this.pictureBoxAnh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBoxAnh1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxAnh1.Name = "pictureBoxAnh1";
-            this.pictureBoxAnh1.Size = new System.Drawing.Size(423, 328);
-            this.pictureBoxAnh1.TabIndex = 189;
-            this.pictureBoxAnh1.TabStop = false;
-            // 
-            // lbTenPhong
-            // 
-            this.lbTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenPhong.Location = new System.Drawing.Point(470, 13);
-            this.lbTenPhong.Name = "lbTenPhong";
-            this.lbTenPhong.Size = new System.Drawing.Size(332, 42);
-            this.lbTenPhong.TabIndex = 215;
-            this.lbTenPhong.Text = "Tên Phòng";
+            this.lblTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenPhong.Location = new System.Drawing.Point(470, 13);
+            this.lblTenPhong.Name = "lblTenPhong";
+            this.lblTenPhong.Size = new System.Drawing.Size(332, 42);
+            this.lblTenPhong.TabIndex = 215;
+            this.lblTenPhong.Text = "Tên Phòng";
             // 
             // lbKichThuocPhong
             // 
-            this.lbKichThuocPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKichThuocPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbKichThuocPhong.Location = new System.Drawing.Point(710, 71);
             this.lbKichThuocPhong.Name = "lbKichThuocPhong";
             this.lbKichThuocPhong.Size = new System.Drawing.Size(92, 27);
             this.lbKichThuocPhong.TabIndex = 216;
             // 
-            // lbGiaPhong
+            // lblGiaPhong
             // 
-            this.lbGiaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGiaPhong.Location = new System.Drawing.Point(600, 121);
-            this.lbGiaPhong.Name = "lbGiaPhong";
-            this.lbGiaPhong.Size = new System.Drawing.Size(202, 27);
-            this.lbGiaPhong.TabIndex = 217;
+            this.lblGiaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiaPhong.Location = new System.Drawing.Point(600, 121);
+            this.lblGiaPhong.Name = "lblGiaPhong";
+            this.lblGiaPhong.Size = new System.Drawing.Size(202, 27);
+            this.lblGiaPhong.TabIndex = 217;
             // 
-            // lbTienNghiPhongTam1
+            // lblTienNghiPhongTam1
             // 
-            this.lbTienNghiPhongTam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhongTam1.Location = new System.Drawing.Point(473, 210);
-            this.lbTienNghiPhongTam1.Name = "lbTienNghiPhongTam1";
-            this.lbTienNghiPhongTam1.Size = new System.Drawing.Size(204, 27);
-            this.lbTienNghiPhongTam1.TabIndex = 218;
+            this.lblTienNghiPhongTam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhongTam1.Location = new System.Drawing.Point(473, 210);
+            this.lblTienNghiPhongTam1.Name = "lblTienNghiPhongTam1";
+            this.lblTienNghiPhongTam1.Size = new System.Drawing.Size(204, 27);
+            this.lblTienNghiPhongTam1.TabIndex = 218;
             // 
-            // lbTienNghiPhongTam3
+            // lblTienNghiPhongTam3
             // 
-            this.lbTienNghiPhongTam3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhongTam3.Location = new System.Drawing.Point(475, 270);
-            this.lbTienNghiPhongTam3.Name = "lbTienNghiPhongTam3";
-            this.lbTienNghiPhongTam3.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhongTam3.TabIndex = 219;
+            this.lblTienNghiPhongTam3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhongTam3.Location = new System.Drawing.Point(475, 270);
+            this.lblTienNghiPhongTam3.Name = "lblTienNghiPhongTam3";
+            this.lblTienNghiPhongTam3.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhongTam3.TabIndex = 219;
             // 
-            // lbTienNghiPhongTam4
+            // lblTienNghiPhongTam4
             // 
-            this.lbTienNghiPhongTam4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhongTam4.Location = new System.Drawing.Point(721, 270);
-            this.lbTienNghiPhongTam4.Name = "lbTienNghiPhongTam4";
-            this.lbTienNghiPhongTam4.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhongTam4.TabIndex = 220;
+            this.lblTienNghiPhongTam4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhongTam4.Location = new System.Drawing.Point(721, 270);
+            this.lblTienNghiPhongTam4.Name = "lblTienNghiPhongTam4";
+            this.lblTienNghiPhongTam4.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhongTam4.TabIndex = 220;
             // 
-            // lbTienNghiPhongTam2
+            // lblTienNghiPhongTam2
             // 
-            this.lbTienNghiPhongTam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhongTam2.Location = new System.Drawing.Point(721, 210);
-            this.lbTienNghiPhongTam2.Name = "lbTienNghiPhongTam2";
-            this.lbTienNghiPhongTam2.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhongTam2.TabIndex = 221;
+            this.lblTienNghiPhongTam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhongTam2.Location = new System.Drawing.Point(721, 210);
+            this.lblTienNghiPhongTam2.Name = "lblTienNghiPhongTam2";
+            this.lblTienNghiPhongTam2.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhongTam2.TabIndex = 221;
             // 
-            // lbHuongTamNhin1
+            // lblHuongTamNhin1
             // 
-            this.lbHuongTamNhin1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHuongTamNhin1.Location = new System.Drawing.Point(475, 367);
-            this.lbHuongTamNhin1.Name = "lbHuongTamNhin1";
-            this.lbHuongTamNhin1.Size = new System.Drawing.Size(202, 27);
-            this.lbHuongTamNhin1.TabIndex = 222;
+            this.lblHuongTamNhin1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHuongTamNhin1.Location = new System.Drawing.Point(475, 367);
+            this.lblHuongTamNhin1.Name = "lblHuongTamNhin1";
+            this.lblHuongTamNhin1.Size = new System.Drawing.Size(202, 27);
+            this.lblHuongTamNhin1.TabIndex = 222;
             // 
-            // lbHuongTamNhin2
+            // lblHuongTamNhin2
             // 
-            this.lbHuongTamNhin2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHuongTamNhin2.Location = new System.Drawing.Point(721, 367);
-            this.lbHuongTamNhin2.Name = "lbHuongTamNhin2";
-            this.lbHuongTamNhin2.Size = new System.Drawing.Size(202, 27);
-            this.lbHuongTamNhin2.TabIndex = 223;
+            this.lblHuongTamNhin2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHuongTamNhin2.Location = new System.Drawing.Point(721, 367);
+            this.lblHuongTamNhin2.Name = "lblHuongTamNhin2";
+            this.lblHuongTamNhin2.Size = new System.Drawing.Size(202, 27);
+            this.lblHuongTamNhin2.TabIndex = 223;
             // 
-            // lbTienNghiPhong1
+            // lblTienNghiPhong1
             // 
-            this.lbTienNghiPhong1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhong1.Location = new System.Drawing.Point(475, 454);
-            this.lbTienNghiPhong1.Name = "lbTienNghiPhong1";
-            this.lbTienNghiPhong1.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhong1.TabIndex = 224;
+            this.lblTienNghiPhong1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhong1.Location = new System.Drawing.Point(475, 454);
+            this.lblTienNghiPhong1.Name = "lblTienNghiPhong1";
+            this.lblTienNghiPhong1.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhong1.TabIndex = 224;
             // 
-            // lbTienNghiPhong2
+            // lblTienNghiPhong2
             // 
-            this.lbTienNghiPhong2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhong2.Location = new System.Drawing.Point(721, 454);
-            this.lbTienNghiPhong2.Name = "lbTienNghiPhong2";
-            this.lbTienNghiPhong2.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhong2.TabIndex = 225;
+            this.lblTienNghiPhong2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhong2.Location = new System.Drawing.Point(721, 454);
+            this.lblTienNghiPhong2.Name = "lblTienNghiPhong2";
+            this.lblTienNghiPhong2.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhong2.TabIndex = 225;
             // 
-            // lbTienNghiPhong3
+            // lblTienNghiPhong3
             // 
-            this.lbTienNghiPhong3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhong3.Location = new System.Drawing.Point(475, 517);
-            this.lbTienNghiPhong3.Name = "lbTienNghiPhong3";
-            this.lbTienNghiPhong3.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhong3.TabIndex = 226;
+            this.lblTienNghiPhong3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhong3.Location = new System.Drawing.Point(475, 517);
+            this.lblTienNghiPhong3.Name = "lblTienNghiPhong3";
+            this.lblTienNghiPhong3.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhong3.TabIndex = 226;
             // 
-            // lbTienNghiPhong4
+            // lblTienNghiPhong4
             // 
-            this.lbTienNghiPhong4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhong4.Location = new System.Drawing.Point(721, 517);
-            this.lbTienNghiPhong4.Name = "lbTienNghiPhong4";
-            this.lbTienNghiPhong4.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhong4.TabIndex = 227;
+            this.lblTienNghiPhong4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhong4.Location = new System.Drawing.Point(721, 517);
+            this.lblTienNghiPhong4.Name = "lblTienNghiPhong4";
+            this.lblTienNghiPhong4.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhong4.TabIndex = 227;
             // 
-            // lbTienNghiPhong5
+            // lblTienNghiPhong5
             // 
-            this.lbTienNghiPhong5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhong5.Location = new System.Drawing.Point(475, 576);
-            this.lbTienNghiPhong5.Name = "lbTienNghiPhong5";
-            this.lbTienNghiPhong5.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhong5.TabIndex = 228;
+            this.lblTienNghiPhong5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhong5.Location = new System.Drawing.Point(475, 576);
+            this.lblTienNghiPhong5.Name = "lblTienNghiPhong5";
+            this.lblTienNghiPhong5.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhong5.TabIndex = 228;
             // 
-            // lbTienNghiPhong6
+            // lblTienNghiPhong6
             // 
-            this.lbTienNghiPhong6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNghiPhong6.Location = new System.Drawing.Point(721, 576);
-            this.lbTienNghiPhong6.Name = "lbTienNghiPhong6";
-            this.lbTienNghiPhong6.Size = new System.Drawing.Size(202, 27);
-            this.lbTienNghiPhong6.TabIndex = 229;
+            this.lblTienNghiPhong6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTienNghiPhong6.Location = new System.Drawing.Point(721, 576);
+            this.lblTienNghiPhong6.Name = "lblTienNghiPhong6";
+            this.lblTienNghiPhong6.Size = new System.Drawing.Size(202, 27);
+            this.lblTienNghiPhong6.TabIndex = 229;
             // 
-            // lbHutThuoc1
+            // lblHutThuoc1
             // 
-            this.lbHutThuoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHutThuoc1.Location = new System.Drawing.Point(475, 658);
-            this.lbHutThuoc1.Name = "lbHutThuoc1";
-            this.lbHutThuoc1.Size = new System.Drawing.Size(202, 27);
-            this.lbHutThuoc1.TabIndex = 230;
+            this.lblHutThuoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHutThuoc1.Location = new System.Drawing.Point(475, 658);
+            this.lblHutThuoc1.Name = "lblHutThuoc1";
+            this.lblHutThuoc1.Size = new System.Drawing.Size(202, 27);
+            this.lblHutThuoc1.TabIndex = 230;
             // 
-            // lbhutThuoc2
+            // lblHutThuoc2
             // 
-            this.lbhutThuoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbhutThuoc2.Location = new System.Drawing.Point(721, 658);
-            this.lbhutThuoc2.Name = "lbhutThuoc2";
-            this.lbhutThuoc2.Size = new System.Drawing.Size(202, 27);
-            this.lbhutThuoc2.TabIndex = 231;
+            this.lblHutThuoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHutThuoc2.Location = new System.Drawing.Point(721, 658);
+            this.lblHutThuoc2.Name = "lblHutThuoc2";
+            this.lblHutThuoc2.Size = new System.Drawing.Size(202, 27);
+            this.lblHutThuoc2.TabIndex = 231;
+            // 
+            // pictureBoxAnh2
+            // 
+            this.pictureBoxAnh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxAnh2.Image = global::Travel.Properties.Resources._5;
+            this.pictureBoxAnh2.Location = new System.Drawing.Point(13, 349);
+            this.pictureBoxAnh2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxAnh2.Name = "pictureBoxAnh2";
+            this.pictureBoxAnh2.Size = new System.Drawing.Size(423, 336);
+            this.pictureBoxAnh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAnh2.TabIndex = 196;
+            this.pictureBoxAnh2.TabStop = false;
+            // 
+            // pictureBoxAnh1
+            // 
+            this.pictureBoxAnh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxAnh1.Image = global::Travel.Properties.Resources._2;
+            this.pictureBoxAnh1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBoxAnh1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxAnh1.Name = "pictureBoxAnh1";
+            this.pictureBoxAnh1.Size = new System.Drawing.Size(423, 328);
+            this.pictureBoxAnh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAnh1.TabIndex = 189;
+            this.pictureBoxAnh1.TabStop = false;
             // 
             // ChiTietPhongCuaKhachSan
             // 
@@ -308,23 +312,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(951, 783);
-            this.Controls.Add(this.lbhutThuoc2);
-            this.Controls.Add(this.lbHutThuoc1);
-            this.Controls.Add(this.lbTienNghiPhong6);
-            this.Controls.Add(this.lbTienNghiPhong5);
-            this.Controls.Add(this.lbTienNghiPhong4);
-            this.Controls.Add(this.lbTienNghiPhong3);
-            this.Controls.Add(this.lbTienNghiPhong2);
-            this.Controls.Add(this.lbTienNghiPhong1);
-            this.Controls.Add(this.lbHuongTamNhin2);
-            this.Controls.Add(this.lbHuongTamNhin1);
-            this.Controls.Add(this.lbTienNghiPhongTam2);
-            this.Controls.Add(this.lbTienNghiPhongTam4);
-            this.Controls.Add(this.lbTienNghiPhongTam3);
-            this.Controls.Add(this.lbTienNghiPhongTam1);
-            this.Controls.Add(this.lbGiaPhong);
+            this.Controls.Add(this.lblHutThuoc2);
+            this.Controls.Add(this.lblHutThuoc1);
+            this.Controls.Add(this.lblTienNghiPhong6);
+            this.Controls.Add(this.lblTienNghiPhong5);
+            this.Controls.Add(this.lblTienNghiPhong4);
+            this.Controls.Add(this.lblTienNghiPhong3);
+            this.Controls.Add(this.lblTienNghiPhong2);
+            this.Controls.Add(this.lblTienNghiPhong1);
+            this.Controls.Add(this.lblHuongTamNhin2);
+            this.Controls.Add(this.lblHuongTamNhin1);
+            this.Controls.Add(this.lblTienNghiPhongTam2);
+            this.Controls.Add(this.lblTienNghiPhongTam4);
+            this.Controls.Add(this.lblTienNghiPhongTam3);
+            this.Controls.Add(this.lblTienNghiPhongTam1);
+            this.Controls.Add(this.lblGiaPhong);
             this.Controls.Add(this.lbKichThuocPhong);
-            this.Controls.Add(this.lbTenPhong);
+            this.Controls.Add(this.lblTenPhong);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.pictureBoxAnh2);
             this.Controls.Add(this.lblHutThuoc);
@@ -357,22 +361,22 @@
         private System.Windows.Forms.Label lblhuongTamNhin;
         private System.Windows.Forms.Label lblTienNghiPhong;
         private System.Windows.Forms.PictureBox pictureBoxAnh1;
-        private System.Windows.Forms.Label lbTenPhong;
+        private System.Windows.Forms.Label lblTenPhong;
         private System.Windows.Forms.Label lbKichThuocPhong;
-        private System.Windows.Forms.Label lbGiaPhong;
-        private System.Windows.Forms.Label lbTienNghiPhongTam1;
-        private System.Windows.Forms.Label lbTienNghiPhongTam3;
-        private System.Windows.Forms.Label lbTienNghiPhongTam4;
-        private System.Windows.Forms.Label lbTienNghiPhongTam2;
-        private System.Windows.Forms.Label lbHuongTamNhin1;
-        private System.Windows.Forms.Label lbHuongTamNhin2;
-        private System.Windows.Forms.Label lbTienNghiPhong1;
-        private System.Windows.Forms.Label lbTienNghiPhong2;
-        private System.Windows.Forms.Label lbTienNghiPhong3;
-        private System.Windows.Forms.Label lbTienNghiPhong4;
-        private System.Windows.Forms.Label lbTienNghiPhong5;
-        private System.Windows.Forms.Label lbTienNghiPhong6;
-        private System.Windows.Forms.Label lbHutThuoc1;
-        private System.Windows.Forms.Label lbhutThuoc2;
+        private System.Windows.Forms.Label lblGiaPhong;
+        private System.Windows.Forms.Label lblTienNghiPhongTam1;
+        private System.Windows.Forms.Label lblTienNghiPhongTam3;
+        private System.Windows.Forms.Label lblTienNghiPhongTam4;
+        private System.Windows.Forms.Label lblTienNghiPhongTam2;
+        private System.Windows.Forms.Label lblHuongTamNhin1;
+        private System.Windows.Forms.Label lblHuongTamNhin2;
+        private System.Windows.Forms.Label lblTienNghiPhong1;
+        private System.Windows.Forms.Label lblTienNghiPhong2;
+        private System.Windows.Forms.Label lblTienNghiPhong3;
+        private System.Windows.Forms.Label lblTienNghiPhong4;
+        private System.Windows.Forms.Label lblTienNghiPhong5;
+        private System.Windows.Forms.Label lblTienNghiPhong6;
+        private System.Windows.Forms.Label lblHutThuoc1;
+        private System.Windows.Forms.Label lblHutThuoc2;
     }
 }

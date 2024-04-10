@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiTietKhachSan));
             this.lblLoai = new System.Windows.Forms.Label();
             this.lblDiaDiem = new System.Windows.Forms.Label();
-            this.pictureBoxLoaiPhong = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDiaDiem = new System.Windows.Forms.PictureBox();
             this.btnXemPhongTrong = new Guna.UI2.WinForms.Guna2GradientButton();
             this.linklbDanhGia = new System.Windows.Forms.LinkLabel();
             this.txtTenKhachSan = new System.Windows.Forms.Label();
+            this.richTextBoxMoTa = new System.Windows.Forms.RichTextBox();
+            this.pictureBoxLoaiPhong = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDiaDiem = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxAnh1 = new System.Windows.Forms.PictureBox();
-            this.richTextBoxMoTa = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoaiPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiaDiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -67,28 +67,6 @@
             this.lblDiaDiem.TabIndex = 111;
             this.lblDiaDiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBoxLoaiPhong
-            // 
-            this.pictureBoxLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxLoaiPhong.Image = global::Travel.Properties.Resources.AnhUCKhachSan;
-            this.pictureBoxLoaiPhong.Location = new System.Drawing.Point(285, 538);
-            this.pictureBoxLoaiPhong.Name = "pictureBoxLoaiPhong";
-            this.pictureBoxLoaiPhong.Size = new System.Drawing.Size(55, 52);
-            this.pictureBoxLoaiPhong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLoaiPhong.TabIndex = 110;
-            this.pictureBoxLoaiPhong.TabStop = false;
-            // 
-            // pictureBoxDiaDiem
-            // 
-            this.pictureBoxDiaDiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxDiaDiem.Image = global::Travel.Properties.Resources.iconDiaDiem;
-            this.pictureBoxDiaDiem.Location = new System.Drawing.Point(12, 538);
-            this.pictureBoxDiaDiem.Name = "pictureBoxDiaDiem";
-            this.pictureBoxDiaDiem.Size = new System.Drawing.Size(55, 52);
-            this.pictureBoxDiaDiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxDiaDiem.TabIndex = 109;
-            this.pictureBoxDiaDiem.TabStop = false;
-            // 
             // btnXemPhongTrong
             // 
             this.btnXemPhongTrong.Animated = true;
@@ -109,6 +87,7 @@
             this.btnXemPhongTrong.Size = new System.Drawing.Size(212, 45);
             this.btnXemPhongTrong.TabIndex = 108;
             this.btnXemPhongTrong.Text = "Xem phòng trống";
+            this.btnXemPhongTrong.Click += new System.EventHandler(this.btnXemPhongTrong_Click);
             // 
             // linklbDanhGia
             // 
@@ -133,9 +112,42 @@
             this.txtTenKhachSan.Text = "Tên Khách Sạn";
             this.txtTenKhachSan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // richTextBoxMoTa
+            // 
+            this.richTextBoxMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxMoTa.Location = new System.Drawing.Point(12, 389);
+            this.richTextBoxMoTa.Name = "richTextBoxMoTa";
+            this.richTextBoxMoTa.ReadOnly = true;
+            this.richTextBoxMoTa.Size = new System.Drawing.Size(839, 129);
+            this.richTextBoxMoTa.TabIndex = 106;
+            this.richTextBoxMoTa.Text = resources.GetString("richTextBoxMoTa.Text");
+            // 
+            // pictureBoxLoaiPhong
+            // 
+            this.pictureBoxLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxLoaiPhong.Image = global::Travel.Properties.Resources.AnhUCKhachSan;
+            this.pictureBoxLoaiPhong.Location = new System.Drawing.Point(285, 538);
+            this.pictureBoxLoaiPhong.Name = "pictureBoxLoaiPhong";
+            this.pictureBoxLoaiPhong.Size = new System.Drawing.Size(55, 52);
+            this.pictureBoxLoaiPhong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLoaiPhong.TabIndex = 110;
+            this.pictureBoxLoaiPhong.TabStop = false;
+            // 
+            // pictureBoxDiaDiem
+            // 
+            this.pictureBoxDiaDiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxDiaDiem.Image = global::Travel.Properties.Resources.iconDiaDiem;
+            this.pictureBoxDiaDiem.Location = new System.Drawing.Point(12, 538);
+            this.pictureBoxDiaDiem.Name = "pictureBoxDiaDiem";
+            this.pictureBoxDiaDiem.Size = new System.Drawing.Size(55, 52);
+            this.pictureBoxDiaDiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDiaDiem.TabIndex = 109;
+            this.pictureBoxDiaDiem.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = global::Travel.Properties.Resources._1;
             this.pictureBox4.Location = new System.Drawing.Point(622, 72);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(229, 145);
@@ -146,6 +158,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = global::Travel.Properties.Resources._3;
             this.pictureBox3.Location = new System.Drawing.Point(387, 72);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(229, 145);
@@ -156,6 +169,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::Travel.Properties.Resources._4;
             this.pictureBox2.Location = new System.Drawing.Point(387, 223);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(464, 150);
@@ -166,22 +180,13 @@
             // pictureBoxAnh1
             // 
             this.pictureBoxAnh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnh1.Image")));
+            this.pictureBoxAnh1.Image = global::Travel.Properties.Resources._6;
             this.pictureBoxAnh1.Location = new System.Drawing.Point(12, 72);
             this.pictureBoxAnh1.Name = "pictureBoxAnh1";
             this.pictureBoxAnh1.Size = new System.Drawing.Size(369, 301);
+            this.pictureBoxAnh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAnh1.TabIndex = 101;
             this.pictureBoxAnh1.TabStop = false;
-            // 
-            // richTextBoxMoTa
-            // 
-            this.richTextBoxMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxMoTa.Location = new System.Drawing.Point(12, 389);
-            this.richTextBoxMoTa.Name = "richTextBoxMoTa";
-            this.richTextBoxMoTa.ReadOnly = true;
-            this.richTextBoxMoTa.Size = new System.Drawing.Size(839, 129);
-            this.richTextBoxMoTa.TabIndex = 106;
-            this.richTextBoxMoTa.Text = resources.GetString("richTextBoxMoTa.Text");
             // 
             // ChiTietKhachSan
             // 

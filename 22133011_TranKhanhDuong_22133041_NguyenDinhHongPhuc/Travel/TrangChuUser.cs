@@ -14,30 +14,47 @@ namespace Travel
 {
     public partial class TrangChuUser : Form
     {
-        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
-        ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
-        DataConnection dB = new DataConnection();
-        TaiKhoan tK = new TaiKhoan();
-        TaiKhoanDAO tKDAO = new TaiKhoanDAO();
+        string tenTaiKhoan;
         public TrangChuUser()
         {
             InitializeComponent();
         }
-        public void LoadData()
+        public TrangChuUser(string tenTaiKhoan)
         {
-            tKDAO.load(tK, dB, "user");
-            flpTrangChu.Controls.Clear();
+            InitializeComponent();
+            lblTenTaiKhoan.Text = tenTaiKhoan;  
+        }
+        private void TrangChuUser_Load(object sender, EventArgs e)
+        {         
+            flpTrangChuUser.Controls.Clear();
             SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
-            connection.Open();
-            int id = tK.ID;
-            string query = "SELECT* FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
+            connection.Open();            
+            string query = "SELECT* FROM ThongTinKhachSan";
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@IDChuKhachSan", id);
             SqlDataReader reader = command.ExecuteReader();
             UCThongTinKhachSan f = new UCThongTinKhachSan();
             while (reader.Read())
             {
-                f.LoadData(flpTrangChu, id);
+                f.LoadData(flpTrangChuUser);
+                break;
+            }
+            connection.Close();
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            flpTrangChuUser.Controls.Clear();
+            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            connection.Open();
+            string selectedDiaDiem = cboDiaDiemTimKiem.Text;
+            string query = "SELECT DISTINCT DiaDiemKhachSan FROM ThongTinKhachSan WHERE DiaDiemKhachSan = @DiaDiemKhachSan";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@DiaDiemKhachSan", selectedDiaDiem);
+            SqlDataReader reader = command.ExecuteReader();
+            UCThongTinKhachSan f = new UCThongTinKhachSan();
+            while (reader.Read())
+            {
+                string diaDiem = reader["DiaDiemKhachSan"].ToString();
+                f.LoadDataTimKiem(flpTrangChuUser, diaDiem);
                 break;
             }
             connection.Close();

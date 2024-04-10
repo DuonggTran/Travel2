@@ -13,23 +13,24 @@ using System.Windows.Forms;
 namespace Travel
 {
     public partial class TrangChuAdmin : Form
-    {
-        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
-        ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
+    {      
         DataConnection dB = new DataConnection();
         TaiKhoan tK = new TaiKhoan();
         TaiKhoanDAO tKDAO = new TaiKhoanDAO();
+        string tenTaiKhoan;
         public TrangChuAdmin()
         {
             InitializeComponent();
         }
-        private void btnChoThue_Click(object sender, EventArgs e)
+        public TrangChuAdmin(string tenTaiKhoan)
         {
-            this.Hide();
+            InitializeComponent();
+            lblTenTaiKhoan.Text = tenTaiKhoan;  
+        }
+        private void btnChoThue_Click(object sender, EventArgs e)
+        {         
             DangThongTinKhachSan f = new DangThongTinKhachSan();
-            f.ShowDialog();
-            f = null;
-            this.Close();
+            f.ShowDialog();        
         }
         public void TrangChuAdmin_Load(object sender, EventArgs e)
         {

@@ -48,16 +48,16 @@
             this.txtGiaPhong = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBoxAnh2 = new System.Windows.Forms.PictureBox();
             this.lblHutThuoc = new System.Windows.Forms.Label();
             this.lblKichThuocPhong = new System.Windows.Forms.Label();
             this.lblTrongPhongTam = new System.Windows.Forms.Label();
             this.lblhuongTamNhin = new System.Windows.Forms.Label();
             this.lblTienNghiPhong = new System.Windows.Forms.Label();
-            this.lblTenPhong = new System.Windows.Forms.Label();
-            this.pictureBoxAnh1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh1)).BeginInit();
+            this.pic_Anh2 = new System.Windows.Forms.PictureBox();
+            this.pic_Anh1 = new System.Windows.Forms.PictureBox();
+            this.cboTenPhong = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThemAnh1
@@ -75,11 +75,12 @@
             this.btnThemAnh1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnThemAnh1.ForeColor = System.Drawing.Color.Black;
             this.btnThemAnh1.Location = new System.Drawing.Point(135, 308);
-            this.btnThemAnh1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemAnh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemAnh1.Name = "btnThemAnh1";
             this.btnThemAnh1.Size = new System.Drawing.Size(188, 38);
             this.btnThemAnh1.TabIndex = 159;
             this.btnThemAnh1.Text = "Thêm ảnh";
+            this.btnThemAnh1.Click += new System.EventHandler(this.btnThemAnh1_Click);
             // 
             // btnThemAnh2
             // 
@@ -96,11 +97,12 @@
             this.btnThemAnh2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnThemAnh2.ForeColor = System.Drawing.Color.Black;
             this.btnThemAnh2.Location = new System.Drawing.Point(135, 658);
-            this.btnThemAnh2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemAnh2.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemAnh2.Name = "btnThemAnh2";
             this.btnThemAnh2.Size = new System.Drawing.Size(188, 38);
             this.btnThemAnh2.TabIndex = 158;
             this.btnThemAnh2.Text = "Thêm ảnh";
+            this.btnThemAnh2.Click += new System.EventHandler(this.btnThemAnh2_Click);
             // 
             // cboHutThuoc2
             // 
@@ -425,7 +427,7 @@
             this.txtKichThuocPhong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKichThuocPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKichThuocPhong.Location = new System.Drawing.Point(720, 70);
-            this.txtKichThuocPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKichThuocPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtKichThuocPhong.Name = "txtKichThuocPhong";
             this.txtKichThuocPhong.Size = new System.Drawing.Size(93, 27);
             this.txtKichThuocPhong.TabIndex = 143;
@@ -435,7 +437,7 @@
             this.txtGiaPhong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGiaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaPhong.Location = new System.Drawing.Point(609, 122);
-            this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtGiaPhong.Name = "txtGiaPhong";
             this.txtGiaPhong.Size = new System.Drawing.Size(203, 27);
             this.txtGiaPhong.TabIndex = 142;
@@ -466,22 +468,12 @@
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Location = new System.Drawing.Point(363, 715);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(188, 38);
             this.btnLuu.TabIndex = 140;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // pictureBoxAnh2
-            // 
-            this.pictureBoxAnh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh2.Location = new System.Drawing.Point(13, 354);
-            this.pictureBoxAnh2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBoxAnh2.Name = "pictureBoxAnh2";
-            this.pictureBoxAnh2.Size = new System.Drawing.Size(423, 296);
-            this.pictureBoxAnh2.TabIndex = 139;
-            this.pictureBoxAnh2.TabStop = false;
             // 
             // lblHutThuoc
             // 
@@ -538,26 +530,43 @@
             this.lblTienNghiPhong.TabIndex = 134;
             this.lblTienNghiPhong.Text = "Tiện nghi phòng:";
             // 
-            // lblTenPhong
+            // pic_Anh2
             // 
-            this.lblTenPhong.AutoSize = true;
-            this.lblTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenPhong.Location = new System.Drawing.Point(480, 14);
-            this.lblTenPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTenPhong.Name = "lblTenPhong";
-            this.lblTenPhong.Size = new System.Drawing.Size(210, 29);
-            this.lblTenPhong.TabIndex = 133;
-            this.lblTenPhong.Text = "Phòng Giường Đôi";
+            this.pic_Anh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_Anh2.Image = global::Travel.Properties.Resources.HinhAnh4;
+            this.pic_Anh2.Location = new System.Drawing.Point(13, 354);
+            this.pic_Anh2.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Anh2.Name = "pic_Anh2";
+            this.pic_Anh2.Size = new System.Drawing.Size(423, 296);
+            this.pic_Anh2.TabIndex = 139;
+            this.pic_Anh2.TabStop = false;
             // 
-            // pictureBoxAnh1
+            // pic_Anh1
             // 
-            this.pictureBoxAnh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh1.Location = new System.Drawing.Point(13, 14);
-            this.pictureBoxAnh1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBoxAnh1.Name = "pictureBoxAnh1";
-            this.pictureBoxAnh1.Size = new System.Drawing.Size(423, 290);
-            this.pictureBoxAnh1.TabIndex = 132;
-            this.pictureBoxAnh1.TabStop = false;
+            this.pic_Anh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_Anh1.Image = global::Travel.Properties.Resources.HinhAnh2;
+            this.pic_Anh1.Location = new System.Drawing.Point(13, 14);
+            this.pic_Anh1.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Anh1.Name = "pic_Anh1";
+            this.pic_Anh1.Size = new System.Drawing.Size(423, 290);
+            this.pic_Anh1.TabIndex = 132;
+            this.pic_Anh1.TabStop = false;
+            // 
+            // cboTenPhong
+            // 
+            this.cboTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTenPhong.FormattingEnabled = true;
+            this.cboTenPhong.Items.AddRange(new object[] {
+            "Phòng giường đôi",
+            "Phòng giường đơn",
+            "Phòng 2 giường đơn",
+            "Phòng 2 giường đôi",
+            "Khác"});
+            this.cboTenPhong.Location = new System.Drawing.Point(486, 14);
+            this.cboTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboTenPhong.Name = "cboTenPhong";
+            this.cboTenPhong.Size = new System.Drawing.Size(327, 39);
+            this.cboTenPhong.TabIndex = 160;
             // 
             // ThemPhongChoKhachSan
             // 
@@ -565,6 +574,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(897, 775);
+            this.Controls.Add(this.cboTenPhong);
             this.Controls.Add(this.btnThemAnh1);
             this.Controls.Add(this.btnThemAnh2);
             this.Controls.Add(this.cboHutThuoc2);
@@ -585,22 +595,21 @@
             this.Controls.Add(this.txtGiaPhong);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.pictureBoxAnh2);
+            this.Controls.Add(this.pic_Anh2);
             this.Controls.Add(this.lblHutThuoc);
             this.Controls.Add(this.lblKichThuocPhong);
             this.Controls.Add(this.lblTrongPhongTam);
             this.Controls.Add(this.lblhuongTamNhin);
             this.Controls.Add(this.lblTienNghiPhong);
-            this.Controls.Add(this.lblTenPhong);
-            this.Controls.Add(this.pictureBoxAnh1);
+            this.Controls.Add(this.pic_Anh1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThemPhongChoKhachSan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemPhongChoKhachSan";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -628,13 +637,13 @@
         private System.Windows.Forms.TextBox txtGiaPhong;
         private System.Windows.Forms.Label label28;
         private Guna.UI2.WinForms.Guna2GradientButton btnLuu;
-        private System.Windows.Forms.PictureBox pictureBoxAnh2;
+        private System.Windows.Forms.PictureBox pic_Anh2;
         private System.Windows.Forms.Label lblHutThuoc;
         private System.Windows.Forms.Label lblKichThuocPhong;
         private System.Windows.Forms.Label lblTrongPhongTam;
         private System.Windows.Forms.Label lblhuongTamNhin;
         private System.Windows.Forms.Label lblTienNghiPhong;
-        private System.Windows.Forms.Label lblTenPhong;
-        private System.Windows.Forms.PictureBox pictureBoxAnh1;
+        private System.Windows.Forms.PictureBox pic_Anh1;
+        private System.Windows.Forms.ComboBox cboTenPhong;
     }
 }

@@ -21,14 +21,13 @@ namespace Travel
             InitializeComponent();
         }
         private void btnChiTiet_Click(object sender, EventArgs e)
-        {
+        {          
             ThongTinKhachSan kSan = new ThongTinKhachSan();
-            kSan.iDKhachSan = iDKhachSan;
+            kSan.IDKhachSan = iDKhachSan;
             kSan.TenKhachSan = txtTenKhachSan.Text;
             kSan.DiaDiemKhachSan = txtDiaDiemKhachSan.Text;
             kSan.Loai = loai;
             kSan.MoTa = mota;          
-            this.Hide();
             ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);          
             f.ShowDialog();                      
         }

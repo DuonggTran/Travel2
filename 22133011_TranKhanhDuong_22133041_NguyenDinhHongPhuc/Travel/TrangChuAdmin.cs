@@ -23,16 +23,7 @@ namespace Travel
         {
             InitializeComponent();
         }
-
-        private void btnChoThue_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DangThongTinKhachSan f = new DangThongTinKhachSan();
-            f.ShowDialog();
-            f = null;
-            this.Close();
-        }
-        private void TrangChuAdmin_Load(object sender, EventArgs e)
+        public void LoadData()
         {
             tKDAO.load(tK, dB, "admin");
             flpTrangChu.Controls.Clear();
@@ -45,11 +36,27 @@ namespace Travel
             SqlDataReader reader = command.ExecuteReader();
             UCKhachSan f = new UCKhachSan();
             while (reader.Read())
-            {               
+            {
                 f.LoadDataTimKiem(flpTrangChu, id);
                 break;
             }
             connection.Close();
+        }
+        private void btnChoThue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangThongTinKhachSan f = new DangThongTinKhachSan();
+            f.ShowDialog();
+            f = null;
+            this.Close();
+        }
+        private void TrangChuAdmin_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }   
 }

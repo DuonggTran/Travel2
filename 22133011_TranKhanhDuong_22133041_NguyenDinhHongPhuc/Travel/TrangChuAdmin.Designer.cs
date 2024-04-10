@@ -31,10 +31,10 @@
             this.flpTrangChu = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlTrangChu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnChoThue = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCapNhat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblTenTrangChu = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTrangChu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,17 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Travel.Properties.Resources.AnhDangNhap;
+            this.pictureBox1.Location = new System.Drawing.Point(1294, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // btnChoThue
             // 
@@ -118,6 +129,7 @@
             this.btnCapNhat.Size = new System.Drawing.Size(136, 39);
             this.btnCapNhat.TabIndex = 20;
             this.btnCapNhat.Text = "Cập Nhật";
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // lblTenTrangChu
             // 
@@ -132,17 +144,6 @@
             this.lblTenTrangChu.Text = "Travel\r\n";
             this.lblTenTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Travel.Properties.Resources.AnhDangNhap;
-            this.pictureBox1.Location = new System.Drawing.Point(1294, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
             // TrangChuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -150,7 +151,7 @@
             this.ClientSize = new System.Drawing.Size(1475, 598);
             this.Controls.Add(this.flpTrangChu);
             this.Controls.Add(this.pnlTrangChu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrangChuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChuAdmin";

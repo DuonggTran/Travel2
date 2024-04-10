@@ -18,14 +18,21 @@ namespace Travel
             if (txtTenDangNhap.Text == tK.TenDangNhap && txtMatKhau.Text == tK.MatKhau && LoaiTaiKhoan == "admin")
             {
                 MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                this.Hide();
                 TrangChuAdmin f = new TrangChuAdmin();
                 f.ShowDialog();
+                f = null;
+                this.Close();
+                
             }
             else if(txtTenDangNhap.Text == tK.TenDangNhap && txtMatKhau.Text == tK.MatKhau && LoaiTaiKhoan == "user")
             {
                 MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                this.Hide();
                 TrangChuUser f = new TrangChuUser();
-                f.ShowDialog();           
+                f.ShowDialog();
+                f = null;
+                this.Close();
             }
             else
             {
@@ -33,6 +40,7 @@ namespace Travel
                 txtMatKhau.ResetText();
                 MessageBox.Show("Loại tài khoản của bạn chưa chính xác!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             }
+
         }       
         private void chkAccAdmin_CheckedChanged(object sender, EventArgs e)
         {

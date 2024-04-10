@@ -29,7 +29,7 @@ namespace Travel
             kSan.Loai = loai;
             kSan.MoTa = mota;          
             ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);          
-            f.ShowDialog();                      
+            f.ShowDialog();   
         }
         public void LoadDataTimKiem(FlowLayoutPanel flpTrangChuAdmin, int id)
         {

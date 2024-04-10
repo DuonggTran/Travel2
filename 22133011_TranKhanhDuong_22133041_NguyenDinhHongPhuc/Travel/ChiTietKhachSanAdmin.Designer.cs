@@ -399,7 +399,7 @@
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(189, 46);
             this.btnLamMoi.TabIndex = 133;
-            this.btnLamMoi.Text = "Làm Mới";
+            this.btnLamMoi.Text = "Cập Nhật";
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // ucPhongKhachSan1
@@ -470,8 +470,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtLoai;
         private Guna.UI2.WinForms.Guna2GradientButton btnLuu;
         private Guna.UI2.WinForms.Guna2GradientButton btnXoa;
-        private System.Windows.Forms.FlowLayoutPanel flpPhongKhachSan;
-        private UCPhongKhachSan ucPhongKhachSan1;
+        public System.Windows.Forms.FlowLayoutPanel flpPhongKhachSan;
+        public UCPhongKhachSan ucPhongKhachSan1;
         private Guna.UI2.WinForms.Guna2GradientButton btnLamMoi;
     }
 }

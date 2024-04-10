@@ -21,24 +21,7 @@ namespace Travel
         public ChiTietKhachSanAdmin()
         {
             InitializeComponent();
-        }
-        public void LoadData()
-        {
-            flpPhongKhachSan.Controls.Clear();
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
-            connection.Open();
-            string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@IDKhachSan", iD);
-            SqlDataReader reader = command.ExecuteReader();
-            UCPhongKhachSan f = new UCPhongKhachSan();
-            while (reader.Read())
-            {
-                f.LoadDataPhong(flpPhongKhachSan, iD);
-                break;
-            }
-            connection.Close();
-        }
+        }       
         public ChiTietKhachSanAdmin(ThongTinKhachSan kSan)
         {
             InitializeComponent();
@@ -52,17 +35,13 @@ namespace Travel
         }
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
-            ThemPhongChoKhachSan f = new ThemPhongChoKhachSan(iD);
+            ThemPhongChoKhachSan f = new ThemPhongChoKhachSan(iD, this);
             f.ShowDialog();
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
             ThongTinKhachSan kSan = new ThongTinKhachSan();
-            kSanDAO.Xoa(iD, dB);
-            this.Hide();
-            TrangChuAdmin f = new TrangChuAdmin();
-            f.ShowDialog();
-            f = null;
+            kSanDAO.Xoa(iD, dB);          
             this.Close();
         }
         private void btnLuu_Click(object sender, EventArgs e)
@@ -115,6 +94,23 @@ namespace Travel
             {
                 pic_Anh4.Image = Image.FromFile(opf.FileName);
             }
-        }     
+        }
+        public void LoadData()
+        {
+            flpPhongKhachSan.Controls.Clear();
+            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            connection.Open();
+            string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@IDKhachSan", iD);
+            SqlDataReader reader = command.ExecuteReader();
+            UCPhongKhachSan f = new UCPhongKhachSan();
+            while (reader.Read())
+            {
+                f.LoadDataPhong(flpPhongKhachSan, iD);
+                break;
+            }
+            connection.Close();
+        }
     }
 }

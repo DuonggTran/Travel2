@@ -19,7 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
         #region Component Designer generated code
 
         /// <summary> 
@@ -133,7 +132,6 @@
         }
 
         #endregion
-
         private System.Windows.Forms.LinkLabel linklblTenPhong;
         private System.Windows.Forms.Panel pnl2;
         private System.Windows.Forms.Label lblGiaTien;

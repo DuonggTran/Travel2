@@ -28,7 +28,7 @@ namespace Travel
             iDKhachSan = kSan.IDKhachSan;
             cboTenPhong.Text = kSan.TenPhong;
             txtKichThuocPhong.Text = kSan.KichThuocPhong;
-            txtGiaPhong.Text= kSan.GiaPhong;
+            txtGiaPhong.Text = kSan.GiaPhong;
             cboTienNghiPhongTam1.Text = kSan.TienNghiPhongTam1;
             cboTienNghiPhongTam2.Text = kSan.TienNghiPhongTam2;
             cboTienNghiPhongTam3.Text = kSan.TienNghiPhongTam3;

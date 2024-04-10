@@ -23,6 +23,22 @@ namespace Travel
         {
             InitializeComponent();
         }
+        private void btnChoThue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangThongTinKhachSan f = new DangThongTinKhachSan();
+            f.ShowDialog();
+            f = null;
+            this.Close();
+        }
+        public void TrangChuAdmin_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
         public void LoadData()
         {
             tKDAO.load(tK, dB, "admin");
@@ -41,22 +57,6 @@ namespace Travel
                 break;
             }
             connection.Close();
-        }
-        private void btnChoThue_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DangThongTinKhachSan f = new DangThongTinKhachSan();
-            f.ShowDialog();
-            f = null;
-            this.Close();
-        }
-        private void TrangChuAdmin_Load(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-        private void btnCapNhat_Click(object sender, EventArgs e)
-        {
-            LoadData();
         }
     }   
 }

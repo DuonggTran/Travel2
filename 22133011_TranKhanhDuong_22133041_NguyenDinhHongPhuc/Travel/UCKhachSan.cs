@@ -14,7 +14,7 @@ namespace Travel
 {
     public partial class UCKhachSan : UserControl
     {
-        public string loai, moTa;
+        public string loai, moTa,anh1,anh2,anh3,anh4;
         public int iDKhachSan;
         public UCKhachSan()
         {
@@ -27,7 +27,11 @@ namespace Travel
             kSan.TenKhachSan = txtTenKhachSan.Text;
             kSan.DiaDiemKhachSan = txtDiaDiemKhachSan.Text;
             kSan.Loai = loai;
-            kSan.MoTa = moTa;          
+            kSan.MoTa = moTa;
+            kSan.hinhAnh1 = anh1;
+            kSan.hinhAnh2 = anh2;
+            kSan.hinhAnh3 = anh3;
+            kSan.hinhAnh4 = anh4;
             ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);          
             f.ShowDialog();   
         }
@@ -50,12 +54,16 @@ namespace Travel
                     uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
                     uc.loai = reader[3].ToString();
                     uc.moTa = reader[4].ToString();
+                    uc.anh1 = reader[5].ToString();
+                    uc.anh2 = reader[6].ToString();
+                    uc.anh3 = reader[7].ToString();
+                    uc.anh4 = reader[8].ToString();
                     khachSanList.Add(uc);
                 }
                 reader.Close();
                 connection.Close();
                 foreach (UCKhachSan uc in khachSanList)
-                {
+                {                   
                     flpTrangChuAdmin.Controls.Add(uc);
                 }
             }

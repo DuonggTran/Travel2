@@ -23,10 +23,10 @@ CREATE TABLE ThongTinKhachSan
 	DiaDiemKhachSan nvarchar(max)Null,
 	Loai nvarchar(max)Null,
 	MoTa nvarchar(max)Null,
-	HinhAnh1 IMAGE,
-	HinhAnh2 IMAGE,
-	HinhAnh3 IMAGE,
-	HinhAnh4 IMAGE,
+	HinhAnh1 nvarchar(max)Null,
+	HinhAnh2 nvarchar(max)Null,
+	HinhAnh3 nvarchar(max)Null,
+	HinhAnh4 nvarchar(max)Null,
 	IDChuKhachSan INT Foreign key References TaiKhoan(IDNguoiDung)
 );
 SELECT *FROM ThongTinKhachSan
@@ -54,8 +54,8 @@ CREATE TABLE ThongTinPhongCuaKhachSan
 	HutThuoc1 nvarchar (max) null,
 	HutThuoc2 nvarchar (max) null,
 	UuDai nvarchar (max) null,
-	HinhAnh1 IMAGE,
-	HinhAnh2 IMAGE,
+	HinhAnh1 nvarchar(max)Null,
+	HinhAnh2 nvarchar(max)Null,
 	IDKhachSan INT Foreign key References ThongTinKhachSan(IDKhachSan)
 );
 SELECT *FROM ThongTinPhongCuaKhachSan

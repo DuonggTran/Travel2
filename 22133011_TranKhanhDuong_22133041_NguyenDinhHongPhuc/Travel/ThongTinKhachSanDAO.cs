@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,17 @@ namespace GUI
         }
         public void Sua(ThongTinKhachSan kSan, DataConnection db)
         {
-            string SQL = string.Format("UPDATE ThongTinKhachSan SET TenKhachSan = '{0}', DiaDiemKhachSan = '{1}', Loai = '{2}', MoTa = '{3}', HinhAnh1 = '{4}', HinhAnh2 = '{5}', HinhAnh3 = '{6}', HinhAnh4 = '{7}' WHERE IDKhachSan = {8}", kSan.TenKhachSan, kSan.DiaDiemKhachSan, kSan.Loai, kSan.MoTa, kSan.HinhAnh1, kSan.HinhAnh2, kSan.HinhAnh3, kSan.HinhAnh4, kSan.IDKhachSan);
+            string SQL = string.Format("UPDATE ThongTinKhachSan SET TenKhachSan = N'{0}', DiaDiemKhachSan = N'{1}', Loai = N'{2}', MoTa = N'{3}', HinhAnh1 = '{4}', HinhAnh2 = '{5}', HinhAnh3 = '{6}', HinhAnh4 = '{7}' WHERE IDKhachSan = {8}", kSan.TenKhachSan, kSan.DiaDiemKhachSan, kSan.Loai, kSan.MoTa, kSan.HinhAnh1, kSan.HinhAnh2, kSan.HinhAnh3, kSan.HinhAnh4, kSan.IDKhachSan);
             db.ThucThi(SQL);
+        }
+        public void AddImageToPictureBox(PictureBox pictureBox)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox.Image = Image.FromFile(opf.FileName);               
+            }
         }
     }
 }

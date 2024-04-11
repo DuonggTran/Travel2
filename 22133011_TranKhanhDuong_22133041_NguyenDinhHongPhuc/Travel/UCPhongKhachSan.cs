@@ -42,6 +42,8 @@ namespace Travel
             kSan.TienNghiPhong6 = tienNghiPhong6;
             kSan.HutThuoc1 = hutThuoc1;
             kSan.HutThuoc2 = hutThuoc2;
+            kSan.HinhAnh1 = hinhAnh1;
+            kSan.HinhAnh2 = hinhAnh2;
             ChiTietPhongKhachSanAdmin f = new ChiTietPhongKhachSanAdmin(kSan);
             f.ShowDialog();
         }
@@ -78,8 +80,8 @@ namespace Travel
                     uc.tienNghiPhong6 = reader[15].ToString();
                     uc.hutThuoc1 = reader[16].ToString();
                     uc.hutThuoc2 = reader[17].ToString();
-                    uc.hinhAnh1 = reader[18].ToString();
                     uc.hinhAnh1 = reader[19].ToString();
+                    uc.hinhAnh2 = reader[20].ToString();
                     phongKhachSanList.Add(uc);
                 }
                 reader.Close();

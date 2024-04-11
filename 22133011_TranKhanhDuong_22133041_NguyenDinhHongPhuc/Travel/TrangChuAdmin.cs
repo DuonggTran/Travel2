@@ -28,7 +28,8 @@ namespace Travel
             lblTenTaiKhoan.Text = tenTaiKhoan;  
         }
         private void btnChoThue_Click(object sender, EventArgs e)
-        {         
+        {
+            this.Hide();
             DangThongTinKhachSan f = new DangThongTinKhachSan();
             f.ShowDialog();        
         }

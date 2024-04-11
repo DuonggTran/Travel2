@@ -13,13 +13,13 @@ namespace GUI
         public string diaDiemKhachSan;
         public string loai;
         public string moTa;
-        public byte[] hinhAnh1;
-        public byte[] hinhAnh2;
-        public byte[] hinhAnh3;
-        public byte[] hinhAnh4;
+        public string hinhAnh1;
+        public string hinhAnh2;
+        public string hinhAnh3;
+        public string hinhAnh4;
         public int iDChuKhachSan;
         public ThongTinKhachSan() { }
-        public ThongTinKhachSan(string tenKhachSan, string diaDiemKhachSan, string loai, string moTa, byte[] hinhAnh1, byte[] hinhAnh2, byte[] hinhAnh3, byte[] hinhAnh4, int iDChuKhachSan)
+        public ThongTinKhachSan(string tenKhachSan, string diaDiemKhachSan, string loai, string moTa, string hinhAnh1, string hinhAnh2, string hinhAnh3, string hinhAnh4, int iDChuKhachSan)
         {
             this.tenKhachSan = tenKhachSan;
             this.diaDiemKhachSan = diaDiemKhachSan;
@@ -51,22 +51,22 @@ namespace GUI
             get { return moTa; }
             set { moTa = value; }
         }
-        public byte[] HinhAnh1
+        public string HinhAnh1
         {
             get { return hinhAnh1; }
             set { hinhAnh1 = value; }
         }
-        public byte[] HinhAnh2
+        public string HinhAnh2
         {
             get { return hinhAnh2; }
             set { hinhAnh2 = value; }
         }
-        public byte[] HinhAnh3
+        public string HinhAnh3
         {
             get { return hinhAnh3; }
             set { hinhAnh3 = value; }
         }
-        public byte[] HinhAnh4
+        public string HinhAnh4
         {
             get { return hinhAnh4; }
             set { hinhAnh4 = value; }

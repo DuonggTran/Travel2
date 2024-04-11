@@ -19,6 +19,7 @@ namespace Travel
         DataConnection dB = new DataConnection();
         ChiTietKhachSanAdmin cT = new ChiTietKhachSanAdmin();
         public int idKhachSan;
+        public string Anh1, Anh2;
         public ThemPhongChoKhachSan()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace Travel
         private void btnLuu_Click(object sender, EventArgs e)
         {       
             this.Hide();
-            ThongTinPhongCuaKhachSan kSan = new ThongTinPhongCuaKhachSan(cboTenPhong.Text, txtKichThuocPhong.Text, txtGiaPhong.Text, cboTienNghiPhongTam1.Text, cboTienNghiPhongTam2.Text, cboTienNghiPhongTam3.Text, cboTienNghiPhongTam4.Text, cboHuongTamNhin1.Text, cboHuongTamNhin2.Text, cboTienNghiPhong1.Text, cboTienNghiPhong2.Text, cboTienNghiPhong3.Text, cboTienNghiPhong4.Text, cboTienNghiPhong5.Text, cboTienNghiPhong6.Text, cboHutThuoc1.Text, cboHutThuoc2.Text, null, null,idKhachSan);
+            ThongTinPhongCuaKhachSan kSan = new ThongTinPhongCuaKhachSan(cboTenPhong.Text, txtKichThuocPhong.Text, txtGiaPhong.Text, cboTienNghiPhongTam1.Text, cboTienNghiPhongTam2.Text, cboTienNghiPhongTam3.Text, cboTienNghiPhongTam4.Text, cboHuongTamNhin1.Text, cboHuongTamNhin2.Text, cboTienNghiPhong1.Text, cboTienNghiPhong2.Text, cboTienNghiPhong3.Text, cboTienNghiPhong4.Text, cboTienNghiPhong5.Text, cboTienNghiPhong6.Text, cboHutThuoc1.Text, cboHutThuoc2.Text, Anh1, Anh2 ,idKhachSan);
             {
                 kSanDAO.Them(kSan, dB);
                 cT.LoadData();
@@ -45,6 +46,7 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh1.Image = Image.FromFile(opf.FileName);
+                Anh1 = opf.FileName;
             }
         }
         private void btnThemAnh2_Click(object sender, EventArgs e)
@@ -54,6 +56,7 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh2.Image = Image.FromFile(opf.FileName);
+                Anh2 = opf.FileName;
             }
         }
     }

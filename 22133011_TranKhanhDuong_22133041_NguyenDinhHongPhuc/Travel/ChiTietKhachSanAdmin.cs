@@ -18,6 +18,7 @@ namespace Travel
         DataConnection dB = new DataConnection();      
         public int iD;
         public int iDChuKS;
+        string Anh1, Anh2, Anh3, Anh4;
         public ChiTietKhachSanAdmin()
         {
             InitializeComponent();
@@ -30,7 +31,15 @@ namespace Travel
             txtLoai.Text = kSan.Loai;
             richTextBoxMoTa.Text = kSan.MoTa;
             iD = kSan.IDKhachSan;
-            iDChuKS = kSan.IDChuKhachSan;
+            iDChuKS = kSan.IDChuKhachSan;          
+            pic_Anh1.Image = Image.FromFile(kSan.HinhAnh1); 
+            pic_Anh2.Image = Image.FromFile(kSan.HinhAnh2);
+            pic_Anh3.Image = Image.FromFile(kSan.HinhAnh3); ;
+            pic_Anh4.Image = Image.FromFile(kSan.HinhAnh4);
+            Anh1 = kSan.HinhAnh1;
+            Anh2 = kSan.HinhAnh2;
+            Anh3 = kSan.HinhAnh3;
+            Anh4 = kSan.HinhAnh4;
             LoadData();
         }
         private void btnThemPhong_Click(object sender, EventArgs e)
@@ -43,17 +52,17 @@ namespace Travel
             ThongTinKhachSan kSan = new ThongTinKhachSan();
             kSanDAO.Xoa(iD, dB);          
             this.Close();
-        }
+        }      
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            ThongTinKhachSan kSan = new ThongTinKhachSan(txtTenKhachSan.Text, txtDiaDiem.Text, txtLoai.Text, richTextBoxMoTa.Text, null, null, null, null, iDChuKS);
+            this.Hide();
+            ThongTinKhachSan kSan = new ThongTinKhachSan(txtTenKhachSan.Text, txtDiaDiem.Text, txtLoai.Text, richTextBoxMoTa.Text, Anh1, Anh2, Anh3, Anh4, iDChuKS);
             kSan.IDKhachSan = iD;
             kSanDAO.Sua(kSan, dB);
-            this.Hide();
             ChiTietKhachSanAdmin f = new ChiTietKhachSanAdmin(kSan);
             f.ShowDialog();
             f = null;
-            this.Close();
+            this.Close();                                                               
         }
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
@@ -66,6 +75,7 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh1.Image = Image.FromFile(opf.FileName);
+                Anh1 = opf.FileName;
             }
         }
         private void btnSuaAnh2_Click(object sender, EventArgs e)
@@ -75,6 +85,7 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh2.Image = Image.FromFile(opf.FileName);
+                Anh2 = opf.FileName;
             }
         }
         private void btnSuaAnh3_Click(object sender, EventArgs e)
@@ -84,6 +95,7 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh3.Image = Image.FromFile(opf.FileName);
+                Anh3 = opf.FileName;
             }
         }
         private void btnSuaAnh4_Click(object sender, EventArgs e)
@@ -93,6 +105,7 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh4.Image = Image.FromFile(opf.FileName);
+                Anh4 = opf.FileName;
             }
         }
         public void LoadData()

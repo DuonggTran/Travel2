@@ -53,12 +53,12 @@
             this.lblTrongPhongTam = new System.Windows.Forms.Label();
             this.lblhuongTamNhin = new System.Windows.Forms.Label();
             this.lblTienNghiPhong = new System.Windows.Forms.Label();
-            this.pictureBoxAnh2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAnh1 = new System.Windows.Forms.PictureBox();
+            this.pic_Anh2 = new System.Windows.Forms.PictureBox();
+            this.pic_Anh1 = new System.Windows.Forms.PictureBox();
             this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cboTenPhong = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSuaAnh1
@@ -81,6 +81,7 @@
             this.btnSuaAnh1.Size = new System.Drawing.Size(188, 38);
             this.btnSuaAnh1.TabIndex = 187;
             this.btnSuaAnh1.Text = "Sửa";
+            this.btnSuaAnh1.Click += new System.EventHandler(this.btnSuaAnh1_Click);
             // 
             // btnSuaAnh2
             // 
@@ -102,6 +103,7 @@
             this.btnSuaAnh2.Size = new System.Drawing.Size(188, 38);
             this.btnSuaAnh2.TabIndex = 186;
             this.btnSuaAnh2.Text = "Sửa";
+            this.btnSuaAnh2.Click += new System.EventHandler(this.btnSuaAnh2_Click);
             // 
             // cboHutThuoc2
             // 
@@ -362,29 +364,29 @@
             this.lblTienNghiPhong.TabIndex = 162;
             this.lblTienNghiPhong.Text = "Tiện nghi phòng:";
             // 
-            // pictureBoxAnh2
+            // pic_Anh2
             // 
-            this.pictureBoxAnh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh2.Image = global::Travel.Properties.Resources.HinhAnh4;
-            this.pictureBoxAnh2.Location = new System.Drawing.Point(13, 389);
-            this.pictureBoxAnh2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxAnh2.Name = "pictureBoxAnh2";
-            this.pictureBoxAnh2.Size = new System.Drawing.Size(423, 296);
-            this.pictureBoxAnh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxAnh2.TabIndex = 167;
-            this.pictureBoxAnh2.TabStop = false;
+            this.pic_Anh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_Anh2.Image = global::Travel.Properties.Resources.HinhAnh4;
+            this.pic_Anh2.Location = new System.Drawing.Point(13, 389);
+            this.pic_Anh2.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Anh2.Name = "pic_Anh2";
+            this.pic_Anh2.Size = new System.Drawing.Size(423, 296);
+            this.pic_Anh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_Anh2.TabIndex = 167;
+            this.pic_Anh2.TabStop = false;
             // 
-            // pictureBoxAnh1
+            // pic_Anh1
             // 
-            this.pictureBoxAnh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxAnh1.Image = global::Travel.Properties.Resources.HinhAnh2;
-            this.pictureBoxAnh1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBoxAnh1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxAnh1.Name = "pictureBoxAnh1";
-            this.pictureBoxAnh1.Size = new System.Drawing.Size(423, 290);
-            this.pictureBoxAnh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxAnh1.TabIndex = 160;
-            this.pictureBoxAnh1.TabStop = false;
+            this.pic_Anh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_Anh1.Image = global::Travel.Properties.Resources.HinhAnh2;
+            this.pic_Anh1.Location = new System.Drawing.Point(13, 13);
+            this.pic_Anh1.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Anh1.Name = "pic_Anh1";
+            this.pic_Anh1.Size = new System.Drawing.Size(423, 290);
+            this.pic_Anh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic_Anh1.TabIndex = 160;
+            this.pic_Anh1.TabStop = false;
             // 
             // btnXoa
             // 
@@ -451,19 +453,19 @@
             this.Controls.Add(this.txtGiaPhong);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.pictureBoxAnh2);
+            this.Controls.Add(this.pic_Anh2);
             this.Controls.Add(this.lblHutThuoc);
             this.Controls.Add(this.lblKichThuocPhong);
             this.Controls.Add(this.lblTrongPhongTam);
             this.Controls.Add(this.lblhuongTamNhin);
             this.Controls.Add(this.lblTienNghiPhong);
-            this.Controls.Add(this.pictureBoxAnh1);
+            this.Controls.Add(this.pic_Anh1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChiTietPhongKhachSanAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietPhongKhachSanAdmin";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnh1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Anh1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,13 +493,13 @@
         private System.Windows.Forms.TextBox txtGiaPhong;
         private System.Windows.Forms.Label label28;
         private Guna.UI2.WinForms.Guna2GradientButton btnLuu;
-        private System.Windows.Forms.PictureBox pictureBoxAnh2;
+        private System.Windows.Forms.PictureBox pic_Anh2;
         private System.Windows.Forms.Label lblHutThuoc;
         private System.Windows.Forms.Label lblKichThuocPhong;
         private System.Windows.Forms.Label lblTrongPhongTam;
         private System.Windows.Forms.Label lblhuongTamNhin;
         private System.Windows.Forms.Label lblTienNghiPhong;
-        private System.Windows.Forms.PictureBox pictureBoxAnh1;
+        private System.Windows.Forms.PictureBox pic_Anh1;
         private Guna.UI2.WinForms.Guna2GradientButton btnXoa;
         private System.Windows.Forms.ComboBox cboTenPhong;
     }

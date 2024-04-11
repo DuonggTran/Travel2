@@ -533,22 +533,22 @@
             // pic_Anh2
             // 
             this.pic_Anh2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_Anh2.Image = global::Travel.Properties.Resources.HinhAnh4;
             this.pic_Anh2.Location = new System.Drawing.Point(13, 354);
             this.pic_Anh2.Margin = new System.Windows.Forms.Padding(4);
             this.pic_Anh2.Name = "pic_Anh2";
             this.pic_Anh2.Size = new System.Drawing.Size(423, 296);
+            this.pic_Anh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Anh2.TabIndex = 139;
             this.pic_Anh2.TabStop = false;
             // 
             // pic_Anh1
             // 
             this.pic_Anh1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_Anh1.Image = global::Travel.Properties.Resources.HinhAnh2;
             this.pic_Anh1.Location = new System.Drawing.Point(13, 14);
             this.pic_Anh1.Margin = new System.Windows.Forms.Padding(4);
             this.pic_Anh1.Name = "pic_Anh1";
             this.pic_Anh1.Size = new System.Drawing.Size(423, 290);
+            this.pic_Anh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Anh1.TabIndex = 132;
             this.pic_Anh1.TabStop = false;
             // 

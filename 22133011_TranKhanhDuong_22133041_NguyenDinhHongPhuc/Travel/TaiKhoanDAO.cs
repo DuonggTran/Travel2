@@ -35,5 +35,34 @@ namespace Travel
                 MessageBox.Show(ex.ToString());
             }
         }
+        public void DangNhap(TaiKhoan tK, DangNhap f, string loaiTaiKhoan)
+        {
+            if (f.txtTenDangNhap.Text == tK.TenDangNhap && f.txtMatKhau.Text == tK.MatKhau && loaiTaiKhoan == "admin")
+            {
+                MessageBox.Show("Đăng Nhập Thành Công", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                f.Hide();
+                TrangChuAdmin tChu = new TrangChuAdmin(tK.TenDangNhap);
+                tChu.ShowDialog();
+                tChu = null;
+                f.Close();
+            }
+            else if (f.txtTenDangNhap.Text == tK.TenDangNhap && f.txtMatKhau.Text == tK.MatKhau && loaiTaiKhoan == "user")
+            {
+                MessageBox.Show("Đăng Nhập Thành Công", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                f.Hide();
+                TrangChuUser tChu = new TrangChuUser(tK.TenDangNhap);
+                tChu.ShowDialog();
+                tChu = null;
+                f.Close();
+            }
+            else
+            {
+                f.txtTenDangNhap.ResetText();
+                f.txtMatKhau.ResetText();
+                f.chkAccAdmin.Checked = false;
+                f.chkAccUser.Checked = false;
+                MessageBox.Show("Loại tài khoản của bạn chưa chính xác!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            }
+        }
     }
 }

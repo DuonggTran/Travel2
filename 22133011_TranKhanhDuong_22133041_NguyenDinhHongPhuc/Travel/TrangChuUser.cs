@@ -9,12 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Travel
 {
     public partial class TrangChuUser : Form
     {
-        string tenTaiKhoan;
+        bool logOut;
         public TrangChuUser()
         {
             InitializeComponent();
@@ -58,6 +59,19 @@ namespace Travel
                 break;
             }
             connection.Close();
+        }
+        private void pic_DangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                logOut = true; // Đánh dấu đã đăng xuất
+                this.Hide();
+                DangNhap f = new DangNhap(logOut);
+                f.ShowDialog();
+                f = null;
+                this.Close(); // Đóng form đăng nhập khi đã đăng xuất
+            }
         }
     }
 }

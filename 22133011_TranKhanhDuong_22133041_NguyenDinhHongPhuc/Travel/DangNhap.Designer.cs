@@ -151,6 +151,7 @@
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DangNhap_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,13 +160,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.TextBox txtTenDangNhap;
-        private System.Windows.Forms.Label lblMatKhau;
-        private System.Windows.Forms.Label lblTenDangNhap;
-        private System.Windows.Forms.CheckBox chkAccUser;
-        private System.Windows.Forms.CheckBox chkAccAdmin;
+        public System.Windows.Forms.Button btnDangNhap;
+        public System.Windows.Forms.PictureBox pictureBox;
+        public System.Windows.Forms.TextBox txtMatKhau;
+        public System.Windows.Forms.TextBox txtTenDangNhap;
+        public System.Windows.Forms.Label lblMatKhau;
+        public System.Windows.Forms.Label lblTenDangNhap;
+        public System.Windows.Forms.CheckBox chkAccUser;
+        public System.Windows.Forms.CheckBox chkAccAdmin;
     }
 }

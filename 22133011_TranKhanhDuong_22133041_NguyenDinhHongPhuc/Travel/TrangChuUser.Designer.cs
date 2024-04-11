@@ -30,14 +30,16 @@
         {
             this.flpTrangChuUser = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlTrangChu = new System.Windows.Forms.Panel();
+            this.pic_DangXuat = new System.Windows.Forms.PictureBox();
+            this.pic_AnhDaiDien = new System.Windows.Forms.PictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblTenTaiKhoan = new System.Windows.Forms.Label();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cboDiaDiemTimKiem = new System.Windows.Forms.ComboBox();
             this.lblTenTrangChu = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTrangChu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_DangXuat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_AnhDaiDien)).BeginInit();
             this.SuspendLayout();
             // 
             // flpTrangChuUser
@@ -51,7 +53,8 @@
             // 
             // pnlTrangChu
             // 
-            this.pnlTrangChu.Controls.Add(this.pictureBox1);
+            this.pnlTrangChu.Controls.Add(this.pic_DangXuat);
+            this.pnlTrangChu.Controls.Add(this.pic_AnhDaiDien);
             this.pnlTrangChu.Controls.Add(this.guna2GradientButton1);
             this.pnlTrangChu.Controls.Add(this.lblTenTaiKhoan);
             this.pnlTrangChu.Controls.Add(this.btnTimKiem);
@@ -62,6 +65,30 @@
             this.pnlTrangChu.Name = "pnlTrangChu";
             this.pnlTrangChu.Size = new System.Drawing.Size(1451, 146);
             this.pnlTrangChu.TabIndex = 6;
+            // 
+            // pic_DangXuat
+            // 
+            this.pic_DangXuat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_DangXuat.Image = global::Travel.Properties.Resources.AnhLogout;
+            this.pic_DangXuat.Location = new System.Drawing.Point(1402, 47);
+            this.pic_DangXuat.Name = "pic_DangXuat";
+            this.pic_DangXuat.Size = new System.Drawing.Size(40, 39);
+            this.pic_DangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_DangXuat.TabIndex = 29;
+            this.pic_DangXuat.TabStop = false;
+            this.pic_DangXuat.Click += new System.EventHandler(this.pic_DangXuat_Click);
+            // 
+            // pic_AnhDaiDien
+            // 
+            this.pic_AnhDaiDien.BackColor = System.Drawing.Color.Transparent;
+            this.pic_AnhDaiDien.Image = global::Travel.Properties.Resources._8;
+            this.pic_AnhDaiDien.Location = new System.Drawing.Point(1267, 7);
+            this.pic_AnhDaiDien.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_AnhDaiDien.Name = "pic_AnhDaiDien";
+            this.pic_AnhDaiDien.Size = new System.Drawing.Size(91, 79);
+            this.pic_AnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_AnhDaiDien.TabIndex = 28;
+            this.pic_AnhDaiDien.TabStop = false;
             // 
             // guna2GradientButton1
             // 
@@ -79,7 +106,7 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.PeachPuff;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(1070, 90);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(1053, 76);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(171, 39);
@@ -89,7 +116,7 @@
             // lblTenTaiKhoan
             // 
             this.lblTenTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenTaiKhoan.Location = new System.Drawing.Point(1252, 92);
+            this.lblTenTaiKhoan.Location = new System.Drawing.Point(1221, 92);
             this.lblTenTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenTaiKhoan.Name = "lblTenTaiKhoan";
             this.lblTenTaiKhoan.Size = new System.Drawing.Size(189, 37);
@@ -113,7 +140,7 @@
             this.btnTimKiem.FillColor2 = System.Drawing.Color.PeachPuff;
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Location = new System.Drawing.Point(1070, 23);
+            this.btnTimKiem.Location = new System.Drawing.Point(1053, 9);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(169, 39);
@@ -131,10 +158,10 @@
             "Đà Nẵng",
             "Nha Trang",
             "Khác"});
-            this.cboDiaDiemTimKiem.Location = new System.Drawing.Point(275, 53);
+            this.cboDiaDiemTimKiem.Location = new System.Drawing.Point(256, 47);
             this.cboDiaDiemTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboDiaDiemTimKiem.Name = "cboDiaDiemTimKiem";
-            this.cboDiaDiemTimKiem.Size = new System.Drawing.Size(771, 39);
+            this.cboDiaDiemTimKiem.Size = new System.Drawing.Size(758, 39);
             this.cboDiaDiemTimKiem.TabIndex = 16;
             // 
             // lblTenTrangChu
@@ -143,23 +170,12 @@
             this.lblTenTrangChu.BackColor = System.Drawing.Color.Transparent;
             this.lblTenTrangChu.Font = new System.Drawing.Font("NSimSun", 40.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenTrangChu.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblTenTrangChu.Location = new System.Drawing.Point(11, 39);
+            this.lblTenTrangChu.Location = new System.Drawing.Point(3, 33);
             this.lblTenTrangChu.Name = "lblTenTrangChu";
             this.lblTenTrangChu.Size = new System.Drawing.Size(239, 67);
             this.lblTenTrangChu.TabIndex = 15;
             this.lblTenTrangChu.Text = "Travel\r\n";
             this.lblTenTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Travel.Properties.Resources._8;
-            this.pictureBox1.Location = new System.Drawing.Point(1298, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
             // 
             // TrangChuUser
             // 
@@ -175,7 +191,8 @@
             this.Load += new System.EventHandler(this.TrangChuUser_Load);
             this.pnlTrangChu.ResumeLayout(false);
             this.pnlTrangChu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_DangXuat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_AnhDaiDien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,6 +206,7 @@
         private System.Windows.Forms.Label lblTenTrangChu;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.Label lblTenTaiKhoan;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_AnhDaiDien;
+        private System.Windows.Forms.PictureBox pic_DangXuat;
     }
 }

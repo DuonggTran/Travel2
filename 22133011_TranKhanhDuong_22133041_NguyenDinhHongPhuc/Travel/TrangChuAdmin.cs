@@ -11,12 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Travel
-{
+{    
     public partial class TrangChuAdmin : Form
-    {      
+    {
+        ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
         DataConnection dB = new DataConnection();
         TaiKhoan tK = new TaiKhoan();
-        TaiKhoanDAO tKDAO = new TaiKhoanDAO();
+        TaiKhoanDAO tKDAO = new TaiKhoanDAO();      
         bool logOut;
         public TrangChuAdmin()
         {
@@ -27,38 +28,21 @@ namespace Travel
             InitializeComponent();
             lblTenTaiKhoan.Text = tenTaiKhoan;  
         }
+        public void TrangChuAdmin_Load(object sender, EventArgs e)
+        {
+            tKDAO.load(tK, dB, "admin");
+            kSanDAO.LoadData(flpTrangChu,tK.ID);
+        }
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            tKDAO.load(tK, dB, "admin");
+            kSanDAO.LoadData(flpTrangChu, tK.ID);
+        }
         private void btnChoThue_Click(object sender, EventArgs e)
         {
             this.Hide();
             DangThongTinKhachSan f = new DangThongTinKhachSan();
-            f.ShowDialog();        
-        }
-        public void TrangChuAdmin_Load(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-        private void btnCapNhat_Click(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-        public void LoadData()
-        {
-            tKDAO.load(tK, dB, "admin");
-            flpTrangChu.Controls.Clear();
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
-            connection.Open();
-            int id = tK.ID;
-            string query = "SELECT* FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@IDChuKhachSan", id);
-            SqlDataReader reader = command.ExecuteReader();
-            UCKhachSan f = new UCKhachSan();
-            while (reader.Read())
-            {
-                f.LoadDataTimKiem(flpTrangChu, id);
-                break;
-            }
-            connection.Close();
+            f.ShowDialog();
         }
         private void pic_DangXuat_Click(object sender, EventArgs e)
         {

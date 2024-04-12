@@ -16,8 +16,7 @@ namespace Travel
     {
         SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
         ThongTinPhongCuaKhachSanDAO kSanDAO = new ThongTinPhongCuaKhachSanDAO();      
-        DataConnection dB = new DataConnection();
-        ChiTietKhachSanAdmin cT = new ChiTietKhachSanAdmin();
+        DataConnection dB = new DataConnection();      
         public int idKhachSan;
         public string Anh1, Anh2;
         public ThemPhongChoKhachSan()
@@ -27,16 +26,14 @@ namespace Travel
         public ThemPhongChoKhachSan(int id, ChiTietKhachSanAdmin f)
         {
             InitializeComponent();
-            idKhachSan = id;
-            cT = f;
+            idKhachSan = id;         
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {       
             this.Hide();
             ThongTinPhongCuaKhachSan kSan = new ThongTinPhongCuaKhachSan(cboTenPhong.Text, txtKichThuocPhong.Text, txtGiaPhong.Text, cboTienNghiPhongTam1.Text, cboTienNghiPhongTam2.Text, cboTienNghiPhongTam3.Text, cboTienNghiPhongTam4.Text, cboHuongTamNhin1.Text, cboHuongTamNhin2.Text, cboTienNghiPhong1.Text, cboTienNghiPhong2.Text, cboTienNghiPhong3.Text, cboTienNghiPhong4.Text, cboTienNghiPhong5.Text, cboTienNghiPhong6.Text, cboHutThuoc1.Text, cboHutThuoc2.Text, Anh1, Anh2 ,idKhachSan);
             {
-                kSanDAO.Them(kSan, dB);
-                cT.LoadData();
+                kSanDAO.Them(kSan, dB);              
             }
         }
         private void btnThemAnh1_Click(object sender, EventArgs e)

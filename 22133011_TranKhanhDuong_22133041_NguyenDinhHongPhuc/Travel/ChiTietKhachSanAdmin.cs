@@ -13,13 +13,13 @@ using System.Windows.Forms;
 namespace Travel
 {
     public partial class ChiTietKhachSanAdmin : Form
-    {
-        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
+    {    
         ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
+        ThongTinPhongCuaKhachSanDAO pKSanDAO = new ThongTinPhongCuaKhachSanDAO();
         DataConnection dB = new DataConnection();      
-        public int iD;
-        public int iDChuKS;
-        string Anh1, Anh2, Anh3, Anh4;
+        public int iD, iDChuKS;      
+        string Anh1, Anh2, Anh3, Anh4, filename;
+        string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
         public ChiTietKhachSanAdmin()
         {
             InitializeComponent();
@@ -27,13 +27,18 @@ namespace Travel
         public ChiTietKhachSanAdmin(ThongTinKhachSan kSan)
         {
             InitializeComponent();
+            // Thong tin chi tiet
             txtTenKhachSan.Text = kSan.TenKhachSan;
             txtDiaDiem.Text = kSan.DiaDiemKhachSan;
             txtLoai.Text = kSan.Loai;
             richTextBoxMoTa.Text = kSan.MoTa;
             iD = kSan.IDKhachSan;
-            iDChuKS = kSan.IDChuKhachSan;           
-            string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            iDChuKS = kSan.IDChuKhachSan;
+            Anh1 = kSan.HinhAnh1;
+            Anh2 = kSan.HinhAnh2;
+            Anh3 = kSan.HinhAnh3;
+            Anh4 = kSan.HinhAnh4;
+            // Load Anh
             string image1 = Path.Combine(appDirectory, kSan.HinhAnh1);
             string image2 = Path.Combine(appDirectory, kSan.HinhAnh2);
             string image3 = Path.Combine(appDirectory, kSan.HinhAnh3);
@@ -41,8 +46,9 @@ namespace Travel
             pic_Anh1.Image = Image.FromFile(image1);
             pic_Anh2.Image = Image.FromFile(image2);
             pic_Anh3.Image = Image.FromFile(image3);
-            pic_Anh4.Image = Image.FromFile(image4);          
-            LoadData();
+            pic_Anh4.Image = Image.FromFile(image4);
+            // Load Data Moi
+            pKSanDAO.LoadData(flpPhongKhachSan,iD);
         }
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
@@ -68,64 +74,40 @@ namespace Travel
         }
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            LoadData();
+            pKSanDAO.LoadData(flpPhongKhachSan,iD);
         }
         private void btnSuaAnh1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                pic_Anh1.Image = Image.FromFile(opf.FileName);
-                Anh1 = opf.FileName;
-            }
+            SaveImage(pic_Anh1);
+            Anh1 = filename;
         }
         private void btnSuaAnh2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                pic_Anh2.Image = Image.FromFile(opf.FileName);
-                Anh2 = opf.FileName;
-            }
+            SaveImage(pic_Anh2);
+            Anh2 = filename;
         }
         private void btnSuaAnh3_Click(object sender, EventArgs e)
         {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                pic_Anh3.Image = Image.FromFile(opf.FileName);
-                Anh3 = opf.FileName;
-            }
+            SaveImage(pic_Anh3);
+            Anh3 = filename;
         }
         private void btnSuaAnh4_Click(object sender, EventArgs e)
         {
+            SaveImage(pic_Anh4);
+            Anh4 = filename;
+        }       
+        public void SaveImage(PictureBox image)
+        {
             OpenFileDialog opf = new OpenFileDialog();
             opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
             if (opf.ShowDialog() == DialogResult.OK)
             {
-                pic_Anh4.Image = Image.FromFile(opf.FileName);
-                Anh4 = opf.FileName;
+                image.Image = Image.FromFile(opf.FileName);
+                filename = Path.GetFileName(opf.FileName);
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, filename);
+                File.Copy(opf.FileName, dest, true);
             }
-        }
-        public void LoadData()
-        {
-            flpPhongKhachSan.Controls.Clear();
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
-            connection.Open();
-            string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@IDKhachSan", iD);
-            SqlDataReader reader = command.ExecuteReader();
-            UCPhongKhachSan f = new UCPhongKhachSan();
-            while (reader.Read())
-            {
-                f.LoadDataPhong(flpPhongKhachSan, iD);
-                break;
-            }
-            connection.Close();
         }
     }
 }

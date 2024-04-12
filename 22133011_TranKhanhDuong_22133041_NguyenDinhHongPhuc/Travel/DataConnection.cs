@@ -10,7 +10,7 @@ namespace Travel
 {
     internal class DataConnection
     {
-        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
+        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);           
         public void ThucThi(string sqltStr)
         {
             try
@@ -28,7 +28,6 @@ namespace Travel
             {
                 cnnStr.Close();
             }
-        }
+        }        
     }
-
 }

@@ -4,7 +4,9 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Travel;
+using static Guna.UI2.WinForms.Suite.Descriptions;
 
 namespace GUI
 {
@@ -24,6 +26,23 @@ namespace GUI
         {
             string SQL = string.Format("UPDATE ThongTinPhongCuaKhachSan SET TenPhong = N'{0}', KichThuocPhong = '{1}', GiaPhong = '{2}', TienNghiPhongTam1 = N'{3}', TienNghiPhongTam2 = '{4}', TienNghiPhongTam3 = N'{5}', TienNghiPhongTam4 = N'{6}', HuongTamNhin1 = N'{7}', HuongTamNhin2 = N'{8}', TienNghiPhong1 = N'{9}', TienNghiPhong2 = N'{10}', TienNghiPhong3 = N'{11}', TienNghiPhong4 = N'{12}', TienNghiPhong5 = N'{13}', TienNghiPhong6 = N'{14}', HutThuoc1 = N'{15}', HutThuoc2 = N'{16}', HinhAnh1 = '{17}', HinhAnh2 = '{18}' WHERE IDPhong = '{19}'", phongKSan.TenPhong, phongKSan.KichThuocPhong, phongKSan.GiaPhong, phongKSan.TienNghiPhongTam1, phongKSan.TienNghiPhongTam2, phongKSan.TienNghiPhongTam3, phongKSan.TienNghiPhongTam4, phongKSan.HuongTamNhin1, phongKSan.HuongTamNhin2, phongKSan.TienNghiPhong1, phongKSan.TienNghiPhong2, phongKSan.TienNghiPhong3, phongKSan.TienNghiPhong4, phongKSan.TienNghiPhong5, phongKSan.TienNghiPhong6, phongKSan.HutThuoc1, phongKSan.HutThuoc2, phongKSan.HinhAnh1, phongKSan.HinhAnh2, phongKSan.IDPhong);
             db.ThucThi(SQL);
+        }
+        public void LoadData(FlowLayoutPanel flpPhongKhachSan, int iD)
+        {
+            flpPhongKhachSan.Controls.Clear();
+            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            connection.Open();
+            string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@IDKhachSan", iD);
+            SqlDataReader reader = command.ExecuteReader();
+            UCPhongKhachSan f = new UCPhongKhachSan();
+            while (reader.Read())
+            {
+                f.LoadDataPhong(flpPhongKhachSan, iD);
+                break;
+            }
+            connection.Close();
         }
     }
 }

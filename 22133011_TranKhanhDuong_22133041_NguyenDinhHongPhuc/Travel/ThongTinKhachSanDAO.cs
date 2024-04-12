@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,14 +30,22 @@ namespace GUI
             string SQL = string.Format("UPDATE ThongTinKhachSan SET TenKhachSan = N'{0}', DiaDiemKhachSan = N'{1}', Loai = N'{2}', MoTa = N'{3}', HinhAnh1 = '{4}', HinhAnh2 = '{5}', HinhAnh3 = '{6}', HinhAnh4 = '{7}' WHERE IDKhachSan = {8}", kSan.TenKhachSan, kSan.DiaDiemKhachSan, kSan.Loai, kSan.MoTa, kSan.HinhAnh1, kSan.HinhAnh2, kSan.HinhAnh3, kSan.HinhAnh4, kSan.IDKhachSan);
             db.ThucThi(SQL);
         }
-        public void AddImageToPictureBox(PictureBox pictureBox)
+        public void LoadData(FlowLayoutPanel flpTrangChu, int id)
         {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
-            if (opf.ShowDialog() == DialogResult.OK)
+            flpTrangChu.Controls.Clear();
+            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            connection.Open();
+            string query = "SELECT* FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@IDChuKhachSan", id);
+            SqlDataReader reader = command.ExecuteReader();
+            UCKhachSan f = new UCKhachSan();
+            while (reader.Read())
             {
-                pictureBox.Image = Image.FromFile(opf.FileName);               
+                f.LoadDataTimKiem(flpTrangChu, id);
+                break;
             }
+            connection.Close();
         }
     }
 }

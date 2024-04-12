@@ -51,6 +51,7 @@ namespace GUI
             get { return moTa; }
             set { moTa = value; }
         }
+
         public string HinhAnh1
         {
             get { return hinhAnh1; }

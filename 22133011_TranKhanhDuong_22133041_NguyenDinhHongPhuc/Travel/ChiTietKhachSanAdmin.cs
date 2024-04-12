@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,15 +32,16 @@ namespace Travel
             txtLoai.Text = kSan.Loai;
             richTextBoxMoTa.Text = kSan.MoTa;
             iD = kSan.IDKhachSan;
-            iDChuKS = kSan.IDChuKhachSan;          
-            pic_Anh1.Image = Image.FromFile(kSan.HinhAnh1); 
-            pic_Anh2.Image = Image.FromFile(kSan.HinhAnh2);
-            pic_Anh3.Image = Image.FromFile(kSan.HinhAnh3); ;
-            pic_Anh4.Image = Image.FromFile(kSan.HinhAnh4);
-            Anh1 = kSan.HinhAnh1;
-            Anh2 = kSan.HinhAnh2;
-            Anh3 = kSan.HinhAnh3;
-            Anh4 = kSan.HinhAnh4;
+            iDChuKS = kSan.IDChuKhachSan;           
+            string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            string image1 = Path.Combine(appDirectory, kSan.HinhAnh1);
+            string image2 = Path.Combine(appDirectory, kSan.HinhAnh2);
+            string image3 = Path.Combine(appDirectory, kSan.HinhAnh3);
+            string image4 = Path.Combine(appDirectory, kSan.HinhAnh4);
+            pic_Anh1.Image = Image.FromFile(image1);
+            pic_Anh2.Image = Image.FromFile(image2);
+            pic_Anh3.Image = Image.FromFile(image3);
+            pic_Anh4.Image = Image.FromFile(image4);          
             LoadData();
         }
         private void btnThemPhong_Click(object sender, EventArgs e)

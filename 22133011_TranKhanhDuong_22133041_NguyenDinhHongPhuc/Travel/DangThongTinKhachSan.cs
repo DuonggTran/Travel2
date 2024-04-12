@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,10 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh1.Image = Image.FromFile(opf.FileName);
-                Anh1 = opf.FileName;
+                Anh1 = Path.GetFileName(opf.FileName);              
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, Anh1);
+                File.Copy(opf.FileName, dest, true);
             }
         }
         private void btnThemAnh2_Click(object sender, EventArgs e)
@@ -50,7 +54,10 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh2.Image = Image.FromFile(opf.FileName);
-                Anh2 = opf.FileName;
+                Anh2 = Path.GetFileName(opf.FileName);
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, Anh2);
+                File.Copy(opf.FileName, dest, true);
             }
         }
         private void btnThemAnh3_Click(object sender, EventArgs e)
@@ -60,7 +67,10 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh3.Image = Image.FromFile(opf.FileName);
-                Anh3 = opf.FileName;
+                Anh3 = Path.GetFileName(opf.FileName);
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, Anh3);
+                File.Copy(opf.FileName, dest, true);
             }
         }
         private void btnThemAnh4_Click(object sender, EventArgs e)
@@ -70,7 +80,10 @@ namespace Travel
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 pic_Anh4.Image = Image.FromFile(opf.FileName);
-                Anh4 = opf.FileName;
+                Anh4 = Path.GetFileName(opf.FileName);
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, Anh4);
+                File.Copy(opf.FileName, dest, true);
             }
         }
     }

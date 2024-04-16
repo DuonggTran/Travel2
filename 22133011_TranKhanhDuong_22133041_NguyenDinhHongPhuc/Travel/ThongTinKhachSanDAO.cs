@@ -33,7 +33,7 @@ namespace GUI
         public void LoadData(FlowLayoutPanel flpTrangChu, int id)
         {
             flpTrangChu.Controls.Clear();
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr);
             connection.Open();
             string query = "SELECT* FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
             SqlCommand command = new SqlCommand(query, connection);

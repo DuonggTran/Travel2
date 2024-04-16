@@ -313,5 +313,20 @@
   <ItemGroup>
     <None Include="Resources\AnhLogout.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8db5848992bfbe4564633026b43203e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0607a40f21bda7899a7baca74f1a6225.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0607a40f21bda7899a7baca74f1a62251.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

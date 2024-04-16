@@ -43,7 +43,7 @@
             this.linklblTenPhong.AutoSize = true;
             this.linklblTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linklblTenPhong.LinkColor = System.Drawing.Color.Blue;
-            this.linklblTenPhong.Location = new System.Drawing.Point(11, 15);
+            this.linklblTenPhong.Location = new System.Drawing.Point(10, 14);
             this.linklblTenPhong.Name = "linklblTenPhong";
             this.linklblTenPhong.Size = new System.Drawing.Size(169, 25);
             this.linklblTenPhong.TabIndex = 5;
@@ -56,17 +56,17 @@
             this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl2.Controls.Add(this.lblGiaTien);
             this.pnl2.Controls.Add(this.lbSoGiaTien);
-            this.pnl2.Location = new System.Drawing.Point(344, 2);
+            this.pnl2.Location = new System.Drawing.Point(301, 2);
             this.pnl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(445, 142);
+            this.pnl2.Size = new System.Drawing.Size(390, 135);
             this.pnl2.TabIndex = 9;
             // 
             // lblGiaTien
             // 
             this.lblGiaTien.AutoSize = true;
             this.lblGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiaTien.Location = new System.Drawing.Point(219, 116);
+            this.lblGiaTien.Location = new System.Drawing.Point(192, 109);
             this.lblGiaTien.Name = "lblGiaTien";
             this.lblGiaTien.Size = new System.Drawing.Size(72, 20);
             this.lblGiaTien.TabIndex = 0;
@@ -76,7 +76,7 @@
             // 
             this.lbSoGiaTien.AutoSize = true;
             this.lbSoGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoGiaTien.Location = new System.Drawing.Point(307, 116);
+            this.lbSoGiaTien.Location = new System.Drawing.Point(269, 109);
             this.lbSoGiaTien.Name = "lbSoGiaTien";
             this.lbSoGiaTien.Size = new System.Drawing.Size(120, 20);
             this.lbSoGiaTien.TabIndex = 1;
@@ -86,7 +86,7 @@
             // 
             this.lblKichThuoc.AutoSize = true;
             this.lblKichThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKichThuoc.Location = new System.Drawing.Point(12, 57);
+            this.lblKichThuoc.Location = new System.Drawing.Point(10, 53);
             this.lblKichThuoc.Name = "lblKichThuoc";
             this.lblKichThuoc.Size = new System.Drawing.Size(185, 20);
             this.lblKichThuoc.TabIndex = 1;
@@ -101,14 +101,14 @@
             this.pnl1.Location = new System.Drawing.Point(3, 2);
             this.pnl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(343, 142);
+            this.pnl1.Size = new System.Drawing.Size(300, 137);
             this.pnl1.TabIndex = 8;
             // 
             // lbKichThuocPhong
             // 
             this.lbKichThuocPhong.AutoSize = true;
             this.lbKichThuocPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbKichThuocPhong.Location = new System.Drawing.Point(227, 57);
+            this.lbKichThuocPhong.Location = new System.Drawing.Point(199, 53);
             this.lbKichThuocPhong.Name = "lbKichThuocPhong";
             this.lbKichThuocPhong.Size = new System.Drawing.Size(27, 20);
             this.lbKichThuocPhong.TabIndex = 6;
@@ -116,13 +116,14 @@
             // 
             // UCPhongKhachSan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCPhongKhachSan";
-            this.Size = new System.Drawing.Size(792, 148);
+            this.Size = new System.Drawing.Size(693, 139);
             this.pnl2.ResumeLayout(false);
             this.pnl2.PerformLayout();
             this.pnl1.ResumeLayout(false);

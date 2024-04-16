@@ -63,6 +63,26 @@ namespace Travel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0607a40f21bda7899a7baca74f1a6225 {
+            get {
+                object obj = ResourceManager.GetObject("0607a40f21bda7899a7baca74f1a6225", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _0607a40f21bda7899a7baca74f1a62251 {
+            get {
+                object obj = ResourceManager.GetObject("0607a40f21bda7899a7baca74f1a62251", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1 {
             get {
                 object obj = ResourceManager.GetObject("1", resourceCulture);
@@ -133,6 +153,16 @@ namespace Travel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9 {
+            get {
+                object obj = ResourceManager.GetObject("9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AnhDangNhap {
             get {
                 object obj = ResourceManager.GetObject("AnhDangNhap", resourceCulture);
@@ -163,6 +193,16 @@ namespace Travel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap c8db5848992bfbe4564633026b43203e {
+            get {
+                object obj = ResourceManager.GetObject("c8db5848992bfbe4564633026b43203e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HinhAnh2 {
             get {
                 object obj = ResourceManager.GetObject("HinhAnh2", resourceCulture);
@@ -186,6 +226,16 @@ namespace Travel.Properties {
         internal static System.Drawing.Bitmap iconDiaDiem {
             get {
                 object obj = ResourceManager.GetObject("iconDiaDiem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

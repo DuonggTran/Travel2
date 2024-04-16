@@ -181,3 +181,35 @@ C:\Users\trank\OneDrive\Máy tính\Test\22133011_TranKhanhDuong_22133041_NguyenD
 C:\Users\trank\OneDrive\Máy tính\Test\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CoreCompileInputs.cache
 C:\Users\trank\OneDrive\Máy tính\Test\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.exe
 C:\Users\trank\OneDrive\Máy tính\Test\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.pdb
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.exe.config
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.exe
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Travel.pdb
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\bin\Debug\Guna.UI2.dll
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.AssemblyReference.cache
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietAnh.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachHang.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietKhachSanAdmin.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongCuaKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ChiTietPhongKhachSanAdmin.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DangNhap.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DangThongTinKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.DanhGia.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.LichSuBookPhong.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.Properties.Resources.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.ThemPhongChoKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChu.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuAdmin.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.TrangChuUser.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCDanhGia.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCPhongKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCThongTinKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.UCThongTinPhongCuaKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.VietDanhGia.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.XemPhongCuaKhachSan.resources
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.GenerateResource.cache
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CoreCompileInputs.cache
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.csproj.CopyComplete
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.exe
+D:\Travel2\22133011_TranKhanhDuong_22133041_NguyenDinhHongPhuc\Travel\obj\Debug\Travel.pdb

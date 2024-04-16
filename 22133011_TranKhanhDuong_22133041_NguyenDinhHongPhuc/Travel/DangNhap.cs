@@ -21,25 +21,8 @@ namespace Travel
             InitializeComponent();
             this.loggedOut = logOut;
         }
-        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            tKDao.load(tK, dB, loaiTaiKhoan);
-            tKDao.DangNhap(tK, this, loaiTaiKhoan);            
-        }       
-        private void chkAccAdmin_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkAccAdmin.Checked)
-            {
-                loaiTaiKhoan = "admin";              
-            }
-        }
-        private void chkAccUser_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkAccUser.Checked)
-            {
-                loaiTaiKhoan = "user";
-            }
-        }
+             
+        
         private void DangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!loggedOut)
@@ -50,6 +33,31 @@ namespace Travel
                     e.Cancel = true;
                 }
             }
+        }
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            tKDao.load(tK, dB, loaiTaiKhoan);
+            tKDao.DangNhap(tK, this, loaiTaiKhoan);
+        }
+
+        private void chkAccAdmin_CheckedChanged(object sender, EventArgs e)
+        {                      
+                if (chkAccAdmin.Checked)
+                {
+                    loaiTaiKhoan = "admin";
+                }           
+        }
+
+        private void chkAccUser_CheckedChanged(object sender, EventArgs e)
+        {          
+                if (chkAccUser.Checked)
+                {
+                    loaiTaiKhoan = "user";
+                }          
+        }
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+            txtMatKhau.PasswordChar = '\u25CF';
         }
     }
 }

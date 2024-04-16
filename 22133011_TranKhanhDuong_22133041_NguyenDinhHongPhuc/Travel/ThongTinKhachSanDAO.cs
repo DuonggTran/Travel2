@@ -47,5 +47,19 @@ namespace GUI
             }
             connection.Close();
         }
+        public void SaveImage(PictureBox image, out string filename)
+        {
+            filename = string.Empty;
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                image.Image = Image.FromFile(opf.FileName);
+                filename = Path.GetFileName(opf.FileName);
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, filename);
+                File.Copy(opf.FileName, dest, true);
+            }
+        }
     }
 }

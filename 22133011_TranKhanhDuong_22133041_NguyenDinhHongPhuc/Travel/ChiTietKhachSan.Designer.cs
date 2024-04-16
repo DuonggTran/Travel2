@@ -100,6 +100,7 @@
             this.linklbDanhGia.TabIndex = 107;
             this.linklbDanhGia.TabStop = true;
             this.linklbDanhGia.Text = "Xem đánh giá";
+            this.linklbDanhGia.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklbDanhGia_LinkClicked);
             // 
             // txtTenKhachSan
             // 

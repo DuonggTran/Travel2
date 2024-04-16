@@ -34,7 +34,6 @@
             this.richTextBoxDanhGia = new System.Windows.Forms.RichTextBox();
             this.btnDangBai = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
-            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
             this.txtTenKhach = new System.Windows.Forms.TextBox();
             this.pnl2.SuspendLayout();
             this.pnl1.SuspendLayout();
@@ -104,30 +103,20 @@
             // 
             // pnl1
             // 
-            this.pnl1.Controls.Add(this.txtLoaiPhong);
             this.pnl1.Controls.Add(this.txtTenKhach);
             this.pnl1.Location = new System.Drawing.Point(3, 3);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(210, 188);
             this.pnl1.TabIndex = 4;
             // 
-            // txtLoaiPhong
-            // 
-            this.txtLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiPhong.Location = new System.Drawing.Point(12, 59);
-            this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.Size = new System.Drawing.Size(124, 20);
-            this.txtLoaiPhong.TabIndex = 47;
-            this.txtLoaiPhong.Text = "Giường đôi";
-            // 
             // txtTenKhach
             // 
+            this.txtTenKhach.BackColor = System.Drawing.Color.White;
             this.txtTenKhach.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenKhach.Location = new System.Drawing.Point(12, 15);
+            this.txtTenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKhach.Location = new System.Drawing.Point(9, 15);
             this.txtTenKhach.Name = "txtTenKhach";
-            this.txtTenKhach.Size = new System.Drawing.Size(145, 23);
+            this.txtTenKhach.Size = new System.Drawing.Size(181, 27);
             this.txtTenKhach.TabIndex = 0;
             this.txtTenKhach.Text = "Khách1";
             // 
@@ -159,7 +148,6 @@
         private System.Windows.Forms.RichTextBox richTextBoxDanhGia;
         private System.Windows.Forms.Button btnDangBai;
         private System.Windows.Forms.Panel pnl1;
-        private System.Windows.Forms.TextBox txtLoaiPhong;
         private System.Windows.Forms.TextBox txtTenKhach;
     }
 }

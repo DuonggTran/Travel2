@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace Travel
 {
     public partial class ChiTietPhongCuaKhachSan : Form
     {
+        string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
         public ChiTietPhongCuaKhachSan()
         {
             InitializeComponent();
@@ -37,8 +39,12 @@ namespace Travel
             lblTienNghiPhong4.Text = kSan.TienNghiPhong4;
             lblTienNghiPhong5.Text = kSan.TienNghiPhong5;
             lblTienNghiPhong6.Text = kSan.TienNghiPhong6;
-        }
-
-       
+            // Load Anh
+            string image1 = Path.Combine(appDirectory, kSan.HinhAnh1);
+            string image2 = Path.Combine(appDirectory, kSan.HinhAnh2);          
+            pic_Anh1.Image = Image.FromFile(image1);
+            pic_Anh2.Image = Image.FromFile(image2);
+            
+        }      
     }
 }

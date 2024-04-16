@@ -14,11 +14,7 @@ namespace Travel
 {
     public partial class ChiTietKhachSan : Form
     {
-        SqlConnection cnnStr = new SqlConnection(Properties.Settings.Default.cnnStr);
-        ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
-        DataConnection dB = new DataConnection();
-        public int iD;
-        public int iDChuKS;
+        public int iD,iDChuKS;        
         public ChiTietKhachSan()
         {
             InitializeComponent();
@@ -33,6 +29,13 @@ namespace Travel
             iD = kSan.IDKhachSan;
             iDChuKS = kSan.IDChuKhachSan;
         }
+
+        private void linklbDanhGia_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           DanhGia f = new DanhGia();
+            f.ShowDialog();
+        }
+
         private void btnXemPhongTrong_Click(object sender, EventArgs e)
         {
             XemPhongCuaKhachSan f = new XemPhongCuaKhachSan(iD);

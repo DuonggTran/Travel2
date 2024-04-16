@@ -16,6 +16,14 @@ namespace Travel
     {
         public int iDPhongKhachSan, iDKhachSan;
         public string tienNghiPhongTam1, tienNghiPhongTam2, tienNghiPhongTam3, tienNghiPhongTam4, huongTamNhin1, huongTamNhin2, tienNghiPhong1, tienNghiPhong2, tienNghiPhong3, tienNghiPhong4, tienNghiPhong5, tienNghiPhong6, hutThuoc1, hutThuoc2, hinhAnh1, hinhAnh2;
+
+        
+
+        private void btnChiTiet_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public UCPhongKhachSan()
         {
             InitializeComponent();
@@ -44,6 +52,7 @@ namespace Travel
             kSan.HutThuoc2 = hutThuoc2;
             kSan.HinhAnh1 = hinhAnh1;
             kSan.HinhAnh2 = hinhAnh2;
+            kSan.TrangThai = lblTrangThai.Text;
             ChiTietPhongKhachSanAdmin f = new ChiTietPhongKhachSanAdmin(kSan);
             f.ShowDialog();
         }
@@ -82,6 +91,7 @@ namespace Travel
                     uc.hutThuoc2 = reader[17].ToString();
                     uc.hinhAnh1 = reader[19].ToString();
                     uc.hinhAnh2 = reader[20].ToString();
+                    uc.lblTrangThai.Text = reader[21].ToString();
                     phongKhachSanList.Add(uc);
                 }
                 reader.Close();

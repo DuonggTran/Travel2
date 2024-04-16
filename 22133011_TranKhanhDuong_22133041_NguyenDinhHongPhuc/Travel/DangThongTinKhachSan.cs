@@ -20,7 +20,7 @@ namespace Travel
         DataConnection dB = new DataConnection();
         TaiKhoan tK = new TaiKhoan();
         TaiKhoanDAO tKDAO = new TaiKhoanDAO();
-        public string filename;
+        string Anh1, Anh2, Anh3, Anh4;
         public DangThongTinKhachSan()
         {
             InitializeComponent();
@@ -33,40 +33,22 @@ namespace Travel
             kSanDAO.Them(kSan, dB);
             TrangChuAdmin f = new TrangChuAdmin();
             f.ShowDialog();
-        }
-        string Anh1, Anh2, Anh3, Anh4;
+        }        
         private void btnThemAnh1_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh1);
-            Anh1 = filename;
+            kSanDAO.SaveImage(pic_Anh1, out Anh1);          
         }
         private void btnThemAnh2_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh2);
-            Anh2 = filename;
+            kSanDAO.SaveImage(pic_Anh2, out Anh2);        
         }
         private void btnThemAnh3_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh3);
-            Anh3 = filename;
+            kSanDAO.SaveImage(pic_Anh3, out Anh3);
         }
         private void btnThemAnh4_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh4);
-            Anh4 = filename;
-        }
-        public void SaveImage(PictureBox image)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                image.Image = Image.FromFile(opf.FileName);
-                filename = Path.GetFileName(opf.FileName);
-                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-                string dest = Path.Combine(appDirectory, filename);
-                File.Copy(opf.FileName, dest, true);
-            }
-        }
+            kSanDAO.SaveImage(pic_Anh4, out Anh4);
+        }               
     } 
 }

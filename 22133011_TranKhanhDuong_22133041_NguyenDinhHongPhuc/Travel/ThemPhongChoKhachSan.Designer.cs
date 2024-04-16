@@ -416,7 +416,7 @@
             "Bồn tắm",
             "Đồ vệ sinh cá nhân miễn phí",
             "Vòi sen"});
-            this.cboTienNghiPhongTam1.Location = new System.Drawing.Point(485, 214);
+            this.cboTienNghiPhongTam1.Location = new System.Drawing.Point(486, 217);
             this.cboTienNghiPhongTam1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTienNghiPhongTam1.Name = "cboTienNghiPhongTam1";
             this.cboTienNghiPhongTam1.Size = new System.Drawing.Size(175, 28);

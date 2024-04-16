@@ -28,9 +28,10 @@ namespace GUI
         public string hutThuoc2;
         public string hinhAnh1;
         public string hinhAnh2;
+        public string trangThai;
         public int iDKhachSan;
         public ThongTinPhongCuaKhachSan() { }
-        public ThongTinPhongCuaKhachSan(string tenPhong, string kichThuocPhong, string giaPhong, string tienNghiPhongTam1, string tienNghiPhongTam2, string tienNghiPhongTam3, string tienNghiPhongTam4, string huongTamNhin1, string huongTamNhin2, string tienNghiPhong1, string tienNghiPhong2, string tienNghiPhong3, string tienNghiPhong4, string tienNghiPhong5, string tienNghiPhong6, string hutThuoc1, string hutThuoc2, string hinhAnh1, string hinhAnh2, int iDKhachSan)
+        public ThongTinPhongCuaKhachSan(string tenPhong, string kichThuocPhong, string giaPhong, string tienNghiPhongTam1, string tienNghiPhongTam2, string tienNghiPhongTam3, string tienNghiPhongTam4, string huongTamNhin1, string huongTamNhin2, string tienNghiPhong1, string tienNghiPhong2, string tienNghiPhong3, string tienNghiPhong4, string tienNghiPhong5, string tienNghiPhong6, string hutThuoc1, string hutThuoc2, string hinhAnh1, string hinhAnh2, string trangThai, int iDKhachSan)
         {
             this.tenPhong = tenPhong;
             this.kichThuocPhong = kichThuocPhong;
@@ -51,6 +52,7 @@ namespace GUI
             this.hutThuoc2 = hutThuoc2;
             this.hinhAnh1 = hinhAnh1;
             this.hinhAnh2 = hinhAnh2;
+            this.trangThai = trangThai;
             this.iDKhachSan = iDKhachSan;
         }
         public string TenPhong
@@ -147,6 +149,11 @@ namespace GUI
         {
             get { return hinhAnh2; }
             set { hinhAnh2 = value; }
+        }
+        public string TrangThai
+        {
+            get { return trangThai; }
+            set { trangThai = value; }
         }
         public int IDKhachSan
         {

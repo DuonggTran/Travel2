@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using System.Drawing;
 using Travel;
-using static Guna.UI2.WinForms.Suite.Descriptions;
 
 namespace GUI
 {
@@ -43,6 +45,20 @@ namespace GUI
                 break;
             }
             connection.Close();
+        }
+        public void SaveImage(PictureBox image, out string filename)
+        {
+            filename = string.Empty;
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                image.Image = System.Drawing.Image.FromFile(opf.FileName);
+                filename = Path.GetFileName(opf.FileName);
+                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+                string dest = Path.Combine(appDirectory, filename);
+                File.Copy(opf.FileName, dest, true);
+            }
         }
     }
 }

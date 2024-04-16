@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Travel
 {
     public partial class UCThongTinPhongCuaKhachSan : UserControl
@@ -18,12 +17,12 @@ namespace Travel
         {
             InitializeComponent();
         }
-        public string TienNghiPhongTam1, TienNghiPhongTam2, TienNghiPhongTam3, TienNghiPhongTam4, HuongTamNhin1, HuongTamNhin2, TienNghiPhong1, TienNghiPhong2, TienNghiPhong3, TienNghiPhong4, TienNghiPhong5, TienNghiPhong6, HutThuoc1, HutThuoc2;
+        public string TienNghiPhongTam1, TienNghiPhongTam2, TienNghiPhongTam3, TienNghiPhongTam4, HuongTamNhin1, HuongTamNhin2, TienNghiPhong1, TienNghiPhong2, TienNghiPhong3, TienNghiPhong4, TienNghiPhong5, TienNghiPhong6, HutThuoc1, HutThuoc2,HinhAnh1,HinhAnh2;
         private void linklblChiTietPhong_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ThongTinPhongCuaKhachSan kSan = new ThongTinPhongCuaKhachSan();
             kSan.TenPhong = linklblChiTietPhong.Text;
-            kSan.KichThuocPhong = lblKichThuoc.Text;
+            kSan.KichThuocPhong = lblKichThuocPhong.Text;
             kSan.GiaPhong = lblSoGiaTien.Text;
             kSan.TienNghiPhongTam1 = TienNghiPhongTam1;
             kSan.TienNghiPhongTam2 = TienNghiPhongTam2;
@@ -39,6 +38,9 @@ namespace Travel
             kSan.TienNghiPhong4 = TienNghiPhong4;
             kSan.TienNghiPhong5 = TienNghiPhong5;
             kSan.TienNghiPhong6 = TienNghiPhong6;
+            kSan.HinhAnh1 = HinhAnh1;
+            kSan.HinhAnh2 = HinhAnh2;
+            kSan.TrangThai = lblTrangThai.Text;
             ChiTietPhongCuaKhachSan f = new ChiTietPhongCuaKhachSan(kSan);
             f.ShowDialog();
         }
@@ -73,6 +75,9 @@ namespace Travel
                     uc.TienNghiPhong6 = reader[15].ToString();
                     uc.HutThuoc1 = reader[16].ToString();
                     uc.HutThuoc2 = reader[17].ToString();
+                    uc.HinhAnh1 = reader[19].ToString();
+                    uc.HinhAnh2 = reader[20].ToString();
+                    uc.lblTrangThai.Text = reader[21].ToString();
                     PhongList.Add(uc);
                 }
                 reader.Close();

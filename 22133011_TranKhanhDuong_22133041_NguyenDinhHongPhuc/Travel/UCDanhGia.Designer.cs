@@ -36,7 +36,6 @@
             this.richTextBoxDanhGia = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTenKhachHang = new System.Windows.Forms.TextBox();
-            this.txtLoaiPhong = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -111,7 +110,6 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtTenKhachHang);
-            this.panel1.Controls.Add(this.txtLoaiPhong);
             this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 186);
@@ -127,16 +125,6 @@
             this.txtTenKhachHang.TabIndex = 48;
             this.txtTenKhachHang.Text = "Tên khách hàng";
             // 
-            // txtLoaiPhong
-            // 
-            this.txtLoaiPhong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiPhong.Location = new System.Drawing.Point(23, 76);
-            this.txtLoaiPhong.Name = "txtLoaiPhong";
-            this.txtLoaiPhong.Size = new System.Drawing.Size(95, 20);
-            this.txtLoaiPhong.TabIndex = 47;
-            this.txtLoaiPhong.Text = "Giường đôi";
-            // 
             // UCDanhGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -144,7 +132,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UCDanhGia";
-            this.Size = new System.Drawing.Size(638, 153);
+            this.Size = new System.Drawing.Size(799, 191);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -163,6 +151,5 @@
         private System.Windows.Forms.RichTextBox richTextBoxDanhGia;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtTenKhachHang;
-        private System.Windows.Forms.TextBox txtLoaiPhong;
     }
 }

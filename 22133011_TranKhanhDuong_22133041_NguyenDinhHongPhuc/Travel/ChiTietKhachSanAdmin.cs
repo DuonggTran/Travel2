@@ -17,7 +17,7 @@ namespace Travel
         ThongTinKhachSanDAO kSanDAO = new ThongTinKhachSanDAO();
         ThongTinPhongCuaKhachSanDAO pKSanDAO = new ThongTinPhongCuaKhachSanDAO();
         DataConnection dB = new DataConnection();      
-        public int iD, iDChuKS;      
+        int iD, iDChuKS;      
         string Anh1, Anh2, Anh3, Anh4, filename;
         string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
         public ChiTietKhachSanAdmin()
@@ -57,7 +57,7 @@ namespace Travel
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            ThongTinKhachSan kSan = new ThongTinKhachSan();
+            // ThongTinKhachSan kSan = new ThongTinKhachSan();
             kSanDAO.Xoa(iD, dB);          
             this.Close();
         }      
@@ -78,36 +78,19 @@ namespace Travel
         }
         private void btnSuaAnh1_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh1);
-            Anh1 = filename;
+            kSanDAO.SaveImage(pic_Anh1, out Anh1);
         }
         private void btnSuaAnh2_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh2);
-            Anh2 = filename;
+            kSanDAO.SaveImage(pic_Anh2, out Anh2);
         }
         private void btnSuaAnh3_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh3);
-            Anh3 = filename;
+            kSanDAO.SaveImage(pic_Anh3, out Anh3);
         }
         private void btnSuaAnh4_Click(object sender, EventArgs e)
         {
-            SaveImage(pic_Anh4);
-            Anh4 = filename;
-        }       
-        public void SaveImage(PictureBox image)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*.gif)| *.jpg;*.png;*.gif";
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                image.Image = Image.FromFile(opf.FileName);
-                filename = Path.GetFileName(opf.FileName);
-                string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
-                string dest = Path.Combine(appDirectory, filename);
-                File.Copy(opf.FileName, dest, true);
-            }
-        }
+            kSanDAO.SaveImage(pic_Anh4, out Anh4);
+        }               
     }
 }

@@ -30,6 +30,7 @@
         {
             this.flpTrangChuUser = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlTrangChu = new System.Windows.Forms.Panel();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.pic_DangXuat = new System.Windows.Forms.PictureBox();
             this.pic_AnhDaiDien = new System.Windows.Forms.PictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -53,6 +54,7 @@
             // 
             // pnlTrangChu
             // 
+            this.pnlTrangChu.Controls.Add(this.guna2Separator1);
             this.pnlTrangChu.Controls.Add(this.pic_DangXuat);
             this.pnlTrangChu.Controls.Add(this.pic_AnhDaiDien);
             this.pnlTrangChu.Controls.Add(this.guna2GradientButton1);
@@ -66,11 +68,21 @@
             this.pnlTrangChu.Size = new System.Drawing.Size(1451, 146);
             this.pnlTrangChu.TabIndex = 6;
             // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Separator1.FillColor = System.Drawing.Color.DarkOrange;
+            this.guna2Separator1.Location = new System.Drawing.Point(64, 132);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(1284, 10);
+            this.guna2Separator1.TabIndex = 27;
+            // 
             // pic_DangXuat
             // 
+            this.pic_DangXuat.BackColor = System.Drawing.Color.Transparent;
             this.pic_DangXuat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_DangXuat.Image = global::Travel.Properties.Resources.AnhLogout;
-            this.pic_DangXuat.Location = new System.Drawing.Point(1402, 47);
+            this.pic_DangXuat.Image = global::Travel.Properties.Resources.icons8_logout;
+            this.pic_DangXuat.Location = new System.Drawing.Point(1388, 50);
             this.pic_DangXuat.Name = "pic_DangXuat";
             this.pic_DangXuat.Size = new System.Drawing.Size(40, 39);
             this.pic_DangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +170,7 @@
             "Đà Nẵng",
             "Nha Trang",
             "Khác"});
-            this.cboDiaDiemTimKiem.Location = new System.Drawing.Point(256, 47);
+            this.cboDiaDiemTimKiem.Location = new System.Drawing.Point(272, 47);
             this.cboDiaDiemTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboDiaDiemTimKiem.Name = "cboDiaDiemTimKiem";
             this.cboDiaDiemTimKiem.Size = new System.Drawing.Size(758, 39);
@@ -170,7 +182,7 @@
             this.lblTenTrangChu.BackColor = System.Drawing.Color.Transparent;
             this.lblTenTrangChu.Font = new System.Drawing.Font("NSimSun", 40.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenTrangChu.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblTenTrangChu.Location = new System.Drawing.Point(3, 33);
+            this.lblTenTrangChu.Location = new System.Drawing.Point(27, 32);
             this.lblTenTrangChu.Name = "lblTenTrangChu";
             this.lblTenTrangChu.Size = new System.Drawing.Size(239, 67);
             this.lblTenTrangChu.TabIndex = 15;
@@ -208,5 +220,6 @@
         private System.Windows.Forms.Label lblTenTaiKhoan;
         private System.Windows.Forms.PictureBox pic_AnhDaiDien;
         private System.Windows.Forms.PictureBox pic_DangXuat;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }

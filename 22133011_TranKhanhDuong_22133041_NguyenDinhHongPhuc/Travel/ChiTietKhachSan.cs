@@ -32,7 +32,7 @@ namespace Travel
 
         private void linklbDanhGia_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           DanhGia f = new DanhGia();
+           DanhGia f = new DanhGia(iD);
             f.ShowDialog();
         }
 

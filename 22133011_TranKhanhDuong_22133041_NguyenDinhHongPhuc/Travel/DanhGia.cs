@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace Travel
         public DanhGia()
         {
             InitializeComponent();
+        }
+        public DanhGia(int id)
+        {
+            InitializeComponent();
+            ThongTinKhachSanDAO khachSanDAO = new ThongTinKhachSanDAO();
+            List<UCDanhGia> khachSanList = khachSanDAO.DataDanhGia(id);
+            foreach (UCDanhGia uc in khachSanList)
+            {
+                flpDanhGia.Controls.Add(uc);
+            }
+
         }
     }
 }

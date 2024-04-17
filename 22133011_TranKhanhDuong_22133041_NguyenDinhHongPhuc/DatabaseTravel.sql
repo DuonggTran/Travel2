@@ -103,32 +103,32 @@ insert into ThongTinPhongCuaKhachSan (TenPhong, KichThuocPhong, GiaPhong, TienNg
 
 CREATE TABLE DanhGia
 (
+	TenKhachHang nvarchar(max),
 	TraiNghiem nvarchar(max),
 	DiemDanhGia nvarchar(max),
 	DanhGiaNguoiDung nvarchar(max),
-	IDNguoiDanhGia INT Foreign key References TaiKhoan(IDNguoiDung),
 	IDKhachSan INT Foreign key References ThongTinKhachSan(IDKhachSan) 
 );
 SELECT *FROM DanhGia
 DROP TABLE DanhGia
 
 insert into DanhGia values 
-(N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2,1)
+(N'A',N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',1)
 insert into DanhGia values 
-(N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2,2)
+(N'B',N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2)
 insert into DanhGia values 
-(N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2,3)
+(N'C',N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',3)
 insert into DanhGia values 
-(N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2,4)
+(N'D',N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',4)
 insert into DanhGia values 
-(N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2,5)
+(N'E',N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',5)
 insert into DanhGia values 
-(N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',2,6)
+(N'F',N'Tuyệt Hảo',N'9+',N'Rất tuyệt vời, 10 điểm',6)
 
 
 CREATE TABLE ThongTinKhachHang
 (
-TenKhachHang nvarchar(max),
+	TenKhachHang nvarchar(max),
 	SDT nvarchar(max),
 	CCCD nvarchar(max),
 	Mail nvarchar(max),

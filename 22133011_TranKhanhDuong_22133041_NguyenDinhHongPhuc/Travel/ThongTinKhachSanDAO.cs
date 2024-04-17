@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Travel;
-using static Guna.UI2.WinForms.Suite.Descriptions;
 
 namespace GUI
 {
@@ -112,6 +111,32 @@ namespace GUI
             }
             return khachSanList;
         }
+        public List<UCDanhGia> DataDanhGia(int id)
+        {
+            List<UCDanhGia> khachSanList = new List<UCDanhGia>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr))
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM DanhGia WHERE IDKhachSan = @IDKhachSan";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDKhachSan", id);
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        UCDanhGia uc = CreateUCDanhGiaFromReader(reader);
+                        khachSanList.Add(uc);
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            return khachSanList;
+        }
         public UCThongTinKhachSan CreateUCThongTinKhachSanFromReader(SqlDataReader reader)
         {
             UCThongTinKhachSan uc = new UCThongTinKhachSan();          
@@ -120,6 +145,15 @@ namespace GUI
             uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
             uc.loai = reader[3].ToString();
             uc.moTa = reader[4].ToString();               
+            return uc;
+        }
+        public UCDanhGia CreateUCDanhGiaFromReader(SqlDataReader reader)
+        {
+            UCDanhGia uc = new UCDanhGia();
+            uc.lblTenKhachHang.Text = reader[0].ToString();
+            uc.lblTraiNghiem.Text = reader[1].ToString();
+            uc.lblDiemDanhGia.Text = reader[2].ToString();
+            uc.richTextBoxDanhGia.Text = reader[3].ToString();          
             return uc;
         }
     }

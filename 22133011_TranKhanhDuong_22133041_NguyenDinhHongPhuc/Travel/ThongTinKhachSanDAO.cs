@@ -61,5 +61,66 @@ namespace GUI
                 File.Copy(opf.FileName, dest, true);
             }
         }
+        public List<UCThongTinKhachSan> GetAllKhachSan()
+        {
+            List<UCThongTinKhachSan> khachSanList = new List<UCThongTinKhachSan>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr))
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM ThongTinKhachSan";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        UCThongTinKhachSan uc = CreateUCThongTinKhachSanFromReader(reader);
+                        khachSanList.Add(uc);
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            return khachSanList;
+        }
+        public List<UCThongTinKhachSan> SearchKhachSanByDiaDiem(string diaDiem)
+        {
+            List<UCThongTinKhachSan> khachSanList = new List<UCThongTinKhachSan>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr))
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM ThongTinKhachSan WHERE DiaDiemKhachSan = @dd";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@dd", diaDiem);
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        UCThongTinKhachSan uc = CreateUCThongTinKhachSanFromReader(reader);
+                        khachSanList.Add(uc);
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            return khachSanList;
+        }
+        public UCThongTinKhachSan CreateUCThongTinKhachSanFromReader(SqlDataReader reader)
+        {
+            UCThongTinKhachSan uc = new UCThongTinKhachSan();          
+            uc.iDKhachSan = (int)reader[0];
+            uc.txtTenKhachSan.Text = reader[1].ToString();
+            uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
+            uc.loai = reader[3].ToString();
+            uc.moTa = reader[4].ToString();               
+            return uc;
+        }
     }
 }

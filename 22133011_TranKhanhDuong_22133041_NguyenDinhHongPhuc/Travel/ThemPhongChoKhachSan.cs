@@ -42,7 +42,7 @@ namespace Travel
         }
         private void btnThemAnh2_Click(object sender, EventArgs e)
         {
-            phongKSanDAO.SaveImage(pic_Anh1, out Anh1);
+            phongKSanDAO.SaveImage(pic_Anh2, out Anh2);
         }       
     }
 }

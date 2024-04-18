@@ -34,7 +34,6 @@
             this.lblLuongKhach = new System.Windows.Forms.Label();
             this.lblPhong = new System.Windows.Forms.Label();
             this.flpTrangChuKhachSan = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucThongTinPhongCuaKhachSan4 = new Travel.UCThongTinPhongCuaKhachSan();
             this.ucThongTinPhongCuaKhachSan1 = new Travel.UCThongTinPhongCuaKhachSan();
             this.ucThongTinPhongCuaKhachSan2 = new Travel.UCThongTinPhongCuaKhachSan();
             this.ucThongTinPhongCuaKhachSan3 = new Travel.UCThongTinPhongCuaKhachSan();
@@ -97,7 +96,6 @@
             // 
             // flpTrangChuKhachSan
             // 
-            this.flpTrangChuKhachSan.Controls.Add(this.ucThongTinPhongCuaKhachSan4);
             this.flpTrangChuKhachSan.Controls.Add(this.ucThongTinPhongCuaKhachSan1);
             this.flpTrangChuKhachSan.Controls.Add(this.ucThongTinPhongCuaKhachSan2);
             this.flpTrangChuKhachSan.Controls.Add(this.ucThongTinPhongCuaKhachSan3);
@@ -106,17 +104,9 @@
             this.flpTrangChuKhachSan.Size = new System.Drawing.Size(794, 615);
             this.flpTrangChuKhachSan.TabIndex = 3;
             // 
-            // ucThongTinPhongCuaKhachSan4
-            // 
-            this.ucThongTinPhongCuaKhachSan4.Location = new System.Drawing.Point(3, 2);
-            this.ucThongTinPhongCuaKhachSan4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucThongTinPhongCuaKhachSan4.Name = "ucThongTinPhongCuaKhachSan4";
-            this.ucThongTinPhongCuaKhachSan4.Size = new System.Drawing.Size(791, 152);
-            this.ucThongTinPhongCuaKhachSan4.TabIndex = 3;
-            // 
             // ucThongTinPhongCuaKhachSan1
             // 
-            this.ucThongTinPhongCuaKhachSan1.Location = new System.Drawing.Point(3, 158);
+            this.ucThongTinPhongCuaKhachSan1.Location = new System.Drawing.Point(3, 2);
             this.ucThongTinPhongCuaKhachSan1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucThongTinPhongCuaKhachSan1.Name = "ucThongTinPhongCuaKhachSan1";
             this.ucThongTinPhongCuaKhachSan1.Size = new System.Drawing.Size(791, 147);
@@ -124,7 +114,7 @@
             // 
             // ucThongTinPhongCuaKhachSan2
             // 
-            this.ucThongTinPhongCuaKhachSan2.Location = new System.Drawing.Point(3, 309);
+            this.ucThongTinPhongCuaKhachSan2.Location = new System.Drawing.Point(3, 153);
             this.ucThongTinPhongCuaKhachSan2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucThongTinPhongCuaKhachSan2.Name = "ucThongTinPhongCuaKhachSan2";
             this.ucThongTinPhongCuaKhachSan2.Size = new System.Drawing.Size(791, 147);
@@ -132,7 +122,7 @@
             // 
             // ucThongTinPhongCuaKhachSan3
             // 
-            this.ucThongTinPhongCuaKhachSan3.Location = new System.Drawing.Point(3, 460);
+            this.ucThongTinPhongCuaKhachSan3.Location = new System.Drawing.Point(3, 304);
             this.ucThongTinPhongCuaKhachSan3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucThongTinPhongCuaKhachSan3.Name = "ucThongTinPhongCuaKhachSan3";
             this.ucThongTinPhongCuaKhachSan3.Size = new System.Drawing.Size(791, 147);
@@ -167,7 +157,6 @@
         private System.Windows.Forms.Label lblLuongKhach;
         private System.Windows.Forms.Label lblPhong;
         private System.Windows.Forms.FlowLayoutPanel flpTrangChuKhachSan;
-        private UCThongTinPhongCuaKhachSan ucThongTinPhongCuaKhachSan4;
         private UCThongTinPhongCuaKhachSan ucThongTinPhongCuaKhachSan1;
         private UCThongTinPhongCuaKhachSan ucThongTinPhongCuaKhachSan2;
         private UCThongTinPhongCuaKhachSan ucThongTinPhongCuaKhachSan3;

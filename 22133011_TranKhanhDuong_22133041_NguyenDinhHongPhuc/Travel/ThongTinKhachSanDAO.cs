@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Travel;
+using static Guna.UI2.WinForms.Suite.Descriptions;
 
 namespace GUI
 {
@@ -135,6 +136,41 @@ namespace GUI
             {
                 MessageBox.Show(ex.ToString());
             }
+            return khachSanList;
+        }
+        public List<UCKhachSan> LoadDataTimKiem(int id)
+        {
+            List<UCKhachSan> khachSanList = new List<UCKhachSan>();
+            try
+            {
+                SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr);
+                connection.Open();
+                string query = "SELECT * FROM ThongTinKhachSan WHERE IDChuKhachSan = @IDChuKhachSan";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@IDChuKhachSan", id);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    UCKhachSan uc = new UCKhachSan();
+                    uc.iDKhachSan = (int)reader[0];
+                    uc.txtTenKhachSan.Text = reader[1].ToString();
+                    uc.txtDiaDiemKhachSan.Text = reader[2].ToString();
+                    uc.loai = reader[3].ToString();
+                    uc.moTa = reader[4].ToString();
+                    uc.anh1 = reader[5].ToString();
+                    uc.anh2 = reader[6].ToString();
+                    uc.anh3 = reader[7].ToString();
+                    uc.anh4 = reader[8].ToString();
+                    khachSanList.Add(uc);
+                }
+                reader.Close();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
             return khachSanList;
         }
         public UCThongTinKhachSan CreateUCThongTinKhachSanFromReader(SqlDataReader reader)

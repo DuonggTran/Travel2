@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace Travel
     public partial class XemPhongCuaKhachSan : Form
     {
         int iDKhachSan;
+        ThongTinPhongCuaKhachSanDAO kSanDAO = new ThongTinPhongCuaKhachSanDAO();
         public XemPhongCuaKhachSan()
         {
             InitializeComponent();
@@ -26,19 +28,8 @@ namespace Travel
         private void XemPhongCuaKhachSan_Load(object sender, EventArgs e)
         {
             flpTrangChuKhachSan.Controls.Clear();
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
-            connection.Open();           
-            string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@IDKhachSan", iDKhachSan);
-            SqlDataReader reader = command.ExecuteReader();
             UCThongTinPhongCuaKhachSan f = new UCThongTinPhongCuaKhachSan();
-            while (reader.Read())
-            {              
-                f.LoadData(flpTrangChuKhachSan, iDKhachSan);
-                break;
-            }
-            connection.Close();
+            f.LoadData(flpTrangChuKhachSan, iDKhachSan);                        
         }
     }
 }

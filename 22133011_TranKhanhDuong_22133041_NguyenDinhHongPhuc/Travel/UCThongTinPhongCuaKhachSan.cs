@@ -44,52 +44,61 @@ namespace Travel
             ChiTietPhongCuaKhachSan f = new ChiTietPhongCuaKhachSan(kSan);
             f.ShowDialog();
         }
+        //public void LoadData(FlowLayoutPanel flpTrangChuKhachSan, int id)
+        //{
+        //List<UCThongTinPhongCuaKhachSan> PhongList = new List<UCThongTinPhongCuaKhachSan>();
+        //try
+        //{
+        //SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+        //connection.Open();
+        //string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
+        //SqlCommand command = new SqlCommand(query, connection);
+        //command.Parameters.AddWithValue("@IDKhachSan", id);
+        //SqlDataReader reader = command.ExecuteReader();
+        //while (reader.Read())
+        //{
+        //UCThongTinPhongCuaKhachSan uc = new UCThongTinPhongCuaKhachSan();
+        //uc.linklblChiTietPhong.Text = reader[1].ToString();
+        //uc.lblKichThuocPhong.Text = reader[2].ToString();
+        //uc.lblSoGiaTien.Text = reader[3].ToString();
+        //uc.TienNghiPhongTam1 = reader[4].ToString();
+        //uc.TienNghiPhongTam2 = reader[5].ToString();
+        //uc.TienNghiPhongTam3 = reader[6].ToString();
+        //uc.TienNghiPhongTam4 = reader[7].ToString();
+        //uc.HuongTamNhin1 = reader[8].ToString();
+        //uc.HuongTamNhin2 = reader[9].ToString();
+        //uc.TienNghiPhong1 = reader[10].ToString();
+        //uc.TienNghiPhong2 = reader[11].ToString();
+        //uc.TienNghiPhong3 = reader[12].ToString();
+        //uc.TienNghiPhong4 = reader[13].ToString();
+        //uc.TienNghiPhong5 = reader[14].ToString();
+        //uc.TienNghiPhong6 = reader[15].ToString();
+        //uc.HutThuoc1 = reader[16].ToString();
+        //uc.HutThuoc2 = reader[17].ToString();
+        //uc.HinhAnh1 = reader[19].ToString();
+        //uc.HinhAnh2 = reader[20].ToString();
+        //uc.lblTrangThai.Text = reader[21].ToString();
+        //PhongList.Add(uc);
+        //}
+        //reader.Close();
+        //connection.Close();
+        //foreach (UCThongTinPhongCuaKhachSan uc in PhongList)
+        //{
+        //flpTrangChuKhachSan.Controls.Add(uc);
+        //}
+        //}
+        //catch (Exception ex)
+        //{
+        //MessageBox.Show(ex.ToString());
+        //}
+        //}
         public void LoadData(FlowLayoutPanel flpTrangChuKhachSan, int id)
         {
-            List<UCThongTinPhongCuaKhachSan> PhongList = new List<UCThongTinPhongCuaKhachSan>();
-            try
+            ThongTinPhongCuaKhachSanDAO khachSanDAO = new ThongTinPhongCuaKhachSanDAO();
+            List<UCThongTinPhongCuaKhachSan> PhongList = khachSanDAO.LoadData(id);
+            foreach (UCThongTinPhongCuaKhachSan uc in PhongList)
             {
-                SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
-                connection.Open();
-                string query = "SELECT* FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@IDKhachSan", id);
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    UCThongTinPhongCuaKhachSan uc = new UCThongTinPhongCuaKhachSan();
-                    uc.linklblChiTietPhong.Text = reader[1].ToString();
-                    uc.lblKichThuocPhong.Text = reader[2].ToString();
-                    uc.lblSoGiaTien.Text = reader[3].ToString();
-                    uc.TienNghiPhongTam1 = reader[4].ToString();
-                    uc.TienNghiPhongTam2 = reader[5].ToString();
-                    uc.TienNghiPhongTam3 = reader[6].ToString();
-                    uc.TienNghiPhongTam4 = reader[7].ToString();
-                    uc.HuongTamNhin1 = reader[8].ToString();
-                    uc.HuongTamNhin2 = reader[9].ToString();
-                    uc.TienNghiPhong1 = reader[10].ToString();
-                    uc.TienNghiPhong2 = reader[11].ToString();
-                    uc.TienNghiPhong3 = reader[12].ToString();
-                    uc.TienNghiPhong4 = reader[13].ToString();
-                    uc.TienNghiPhong5 = reader[14].ToString();
-                    uc.TienNghiPhong6 = reader[15].ToString();
-                    uc.HutThuoc1 = reader[16].ToString();
-                    uc.HutThuoc2 = reader[17].ToString();
-                    uc.HinhAnh1 = reader[19].ToString();
-                    uc.HinhAnh2 = reader[20].ToString();
-                    uc.lblTrangThai.Text = reader[21].ToString();
-                    PhongList.Add(uc);
-                }
-                reader.Close();
-                connection.Close();
-                foreach (UCThongTinPhongCuaKhachSan uc in PhongList)
-                {
-                    flpTrangChuKhachSan.Controls.Add(uc);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
+                flpTrangChuKhachSan.Controls.Add(uc);
             }
         }
     }

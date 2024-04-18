@@ -17,7 +17,7 @@ namespace Travel
         ThongTinPhongCuaKhachSanDAO phongKSanDAO = new ThongTinPhongCuaKhachSanDAO();
         DataConnection dB = new DataConnection();
         int iD, iDKhachSan;
-        string Anh1, Anh2, filename;
+        string Anh1, Anh2;
         string appDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
         public ChiTietPhongKhachSanAdmin()
         {

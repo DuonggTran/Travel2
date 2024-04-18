@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Drawing;
 using Travel;
+using static Guna.UI2.WinForms.Suite.Descriptions;
 
 namespace GUI
 {
@@ -59,6 +60,100 @@ namespace GUI
                 string dest = Path.Combine(appDirectory, filename);
                 File.Copy(opf.FileName, dest, true);
             }
+        }
+        public List<UCThongTinPhongCuaKhachSan> LoadData(int id)
+        {
+            List<UCThongTinPhongCuaKhachSan> PhongList = new List<UCThongTinPhongCuaKhachSan>();
+            try
+            {
+                SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr);
+                connection.Open();
+                string query = "SELECT * FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@IDKhachSan", id);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    UCThongTinPhongCuaKhachSan uc = new UCThongTinPhongCuaKhachSan();
+                    uc.linklblChiTietPhong.Text = reader[1].ToString();
+                    uc.lblKichThuocPhong.Text = reader[2].ToString();
+                    uc.lblSoGiaTien.Text = reader[3].ToString();
+                    uc.TienNghiPhongTam1 = reader[4].ToString();
+                    uc.TienNghiPhongTam2 = reader[5].ToString();
+                    uc.TienNghiPhongTam3 = reader[6].ToString();
+                    uc.TienNghiPhongTam4 = reader[7].ToString();
+                    uc.HuongTamNhin1 = reader[8].ToString();
+                    uc.HuongTamNhin2 = reader[9].ToString();
+                    uc.TienNghiPhong1 = reader[10].ToString();
+                    uc.TienNghiPhong2 = reader[11].ToString();
+                    uc.TienNghiPhong3 = reader[12].ToString();
+                    uc.TienNghiPhong4 = reader[13].ToString();
+                    uc.TienNghiPhong5 = reader[14].ToString();
+                    uc.TienNghiPhong6 = reader[15].ToString();
+                    uc.HutThuoc1 = reader[16].ToString();
+                    uc.HutThuoc2 = reader[17].ToString();
+                    uc.HinhAnh1 = reader[19].ToString();
+                    uc.HinhAnh2 = reader[20].ToString();
+                    uc.lblTrangThai.Text = reader[21].ToString();
+                    PhongList.Add(uc);
+                }
+                reader.Close();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            return PhongList;
+        }
+        public List<UCPhongKhachSan> LoadDataPhong(int id)
+        {
+            List<UCPhongKhachSan> phongKhachSanList = new List<UCPhongKhachSan>();
+            try
+            {
+                SqlConnection connection = new SqlConnection(Travel.Properties.Settings.Default.cnnStr);
+                connection.Open();
+                string query = "SELECT * FROM ThongTinPhongCuaKhachSan WHERE IDKhachSan = @IDKhachSan";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@IDKhachSan", id);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    UCPhongKhachSan uc = new UCPhongKhachSan();
+                    uc.iDKhachSan = id;
+                    uc.iDPhongKhachSan = (int)reader[0];
+                    uc.linklblTenPhong.Text = reader[1].ToString();
+                    uc.lbKichThuocPhong.Text = reader[2].ToString();
+                    uc.lbSoGiaTien.Text = reader[3].ToString();
+                    uc.tienNghiPhongTam1 = reader[4].ToString();
+                    uc.tienNghiPhongTam2 = reader[5].ToString();
+                    uc.tienNghiPhongTam3 = reader[6].ToString();
+                    uc.tienNghiPhongTam4 = reader[7].ToString();
+                    uc.huongTamNhin1 = reader[8].ToString();
+                    uc.huongTamNhin2 = reader[9].ToString();
+                    uc.tienNghiPhong1 = reader[10].ToString();
+                    uc.tienNghiPhong2 = reader[11].ToString();
+                    uc.tienNghiPhong3 = reader[12].ToString();
+                    uc.tienNghiPhong4 = reader[13].ToString();
+                    uc.tienNghiPhong5 = reader[14].ToString();
+                    uc.tienNghiPhong6 = reader[15].ToString();
+                    uc.hutThuoc1 = reader[16].ToString();
+                    uc.hutThuoc2 = reader[17].ToString();
+                    uc.hinhAnh1 = reader[19].ToString();
+                    uc.hinhAnh2 = reader[20].ToString();
+                    uc.lblTrangThai.Text = reader[21].ToString();
+                    phongKhachSanList.Add(uc);
+                }
+                reader.Close();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            return phongKhachSanList;
         }
     }
 }

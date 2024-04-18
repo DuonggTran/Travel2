@@ -15,15 +15,7 @@ namespace Travel
     public partial class UCPhongKhachSan : UserControl
     {
         public int iDPhongKhachSan, iDKhachSan;
-        public string tienNghiPhongTam1, tienNghiPhongTam2, tienNghiPhongTam3, tienNghiPhongTam4, huongTamNhin1, huongTamNhin2, tienNghiPhong1, tienNghiPhong2, tienNghiPhong3, tienNghiPhong4, tienNghiPhong5, tienNghiPhong6, hutThuoc1, hutThuoc2, hinhAnh1, hinhAnh2;
-
-        
-
-        private void btnChiTiet_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        public string tienNghiPhongTam1, tienNghiPhongTam2, tienNghiPhongTam3, tienNghiPhongTam4, huongTamNhin1, huongTamNhin2, tienNghiPhong1, tienNghiPhong2, tienNghiPhong3, tienNghiPhong4, tienNghiPhong5, tienNghiPhong6, hutThuoc1, hutThuoc2, hinhAnh1, hinhAnh2;   
         public UCPhongKhachSan()
         {
             InitializeComponent();
@@ -56,7 +48,7 @@ namespace Travel
             ChiTietPhongKhachSanAdmin f = new ChiTietPhongKhachSanAdmin(kSan);
             f.ShowDialog();
         }
-        public void LoadDataPhong(FlowLayoutPanel flpPhongKhachSan, int id)
+        /*public void LoadDataPhong(FlowLayoutPanel flpPhongKhachSan, int id)
         {
             List<UCPhongKhachSan> phongKhachSanList = new List<UCPhongKhachSan>();
             try
@@ -104,6 +96,15 @@ namespace Travel
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+            }
+        }*/
+        public void LoadDataPhong(FlowLayoutPanel flpPhongKhachSan, int id)
+        {
+            ThongTinPhongCuaKhachSanDAO phongKhachSanDAO = new ThongTinPhongCuaKhachSanDAO();
+            List<UCPhongKhachSan> phongKhachSanList = phongKhachSanDAO.LoadDataPhong(id);
+            foreach (UCPhongKhachSan uc in phongKhachSanList)
+            {
+                flpPhongKhachSan.Controls.Add(uc);
             }
         }
     }

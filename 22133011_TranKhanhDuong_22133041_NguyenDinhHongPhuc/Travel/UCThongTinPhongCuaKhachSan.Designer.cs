@@ -148,13 +148,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblKichThuoc;
-        private System.Windows.Forms.LinkLabel linklblChiTietPhong;
-        private System.Windows.Forms.Label lblKichThuocPhong;
-        private System.Windows.Forms.Panel pnl1;
-        private System.Windows.Forms.Label lblSoGiaTien;
-        private System.Windows.Forms.Label lblGiaTien;
-        private System.Windows.Forms.Panel pnl2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTrangThai;
+        public System.Windows.Forms.Label lblKichThuoc;
+        public System.Windows.Forms.LinkLabel linklblChiTietPhong;
+        public System.Windows.Forms.Label lblKichThuocPhong;
+        public System.Windows.Forms.Panel pnl1;
+        public System.Windows.Forms.Label lblSoGiaTien;
+        public System.Windows.Forms.Label lblGiaTien;
+        public System.Windows.Forms.Panel pnl2;
+        public Guna.UI2.WinForms.Guna2HtmlLabel lblTrangThai;
     }
 }

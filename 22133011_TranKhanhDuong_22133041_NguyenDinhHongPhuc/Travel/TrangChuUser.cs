@@ -26,8 +26,8 @@ namespace Travel
             lblTenTaiKhoan.Text = tenTaiKhoan;  
         }
         private void TrangChuUser_Load(object sender, EventArgs e)
-        {         
-            flpTrangChuUser.Controls.Clear();
+        {
+            /*flpTrangChuUser.Controls.Clear();
             SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
             connection.Open();            
             string query = "SELECT* FROM ThongTinKhachSan";
@@ -39,12 +39,15 @@ namespace Travel
                 f.LoadData(flpTrangChuUser);
                 break;
             }
-            connection.Close();
+            connection.Close();*/
+            flpTrangChuUser.Controls.Clear();            
+            UCThongTinKhachSan f = new UCThongTinKhachSan();
+            f.LoadData(flpTrangChuUser);           
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             flpTrangChuUser.Controls.Clear();
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
+            /*SqlConnection connection = new SqlConnection(Properties.Settings.Default.cnnStr);
             connection.Open();
             string selectedDiaDiem = cboDiaDiemTimKiem.Text;
             string query = "SELECT DISTINCT DiaDiemKhachSan FROM ThongTinKhachSan WHERE DiaDiemKhachSan = @DiaDiemKhachSan";
@@ -58,7 +61,10 @@ namespace Travel
                 f.LoadDataTimKiem(flpTrangChuUser, diaDiem);
                 break;
             }
-            connection.Close();
+            connection.Close();*/
+            string DiaDiem = cboDiaDiemTimKiem.Text;
+            UCThongTinKhachSan f = new UCThongTinKhachSan();
+            f.LoadDataTimKiem(flpTrangChuUser, DiaDiem);
         }
         private void pic_DangXuat_Click(object sender, EventArgs e)
         {

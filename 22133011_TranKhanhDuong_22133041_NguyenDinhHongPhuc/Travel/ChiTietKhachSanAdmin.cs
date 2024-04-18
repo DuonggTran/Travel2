@@ -48,7 +48,7 @@ namespace Travel
             pic_Anh3.Image = Image.FromFile(image3);
             pic_Anh4.Image = Image.FromFile(image4);
             // Load Data Moi
-            pKSanDAO.LoadData(flpPhongKhachSan,iD);
+            pKSanDAO.LoadData(flpPhongKhachSan,iD); 
         }
         private void btnThemPhong_Click(object sender, EventArgs e)
         {

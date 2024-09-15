@@ -57,7 +57,6 @@ namespace Travel
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            // ThongTinKhachSan kSan = new ThongTinKhachSan();
             kSanDAO.Xoa(iD, dB);          
             this.Close();
         }      

@@ -26,7 +26,6 @@ namespace Travel
             {
                 flpDanhGia.Controls.Add(uc);
             }
-
         }
     }
 }

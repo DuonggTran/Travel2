@@ -36,7 +36,6 @@
             this.pic_DangXuat = new System.Windows.Forms.PictureBox();
             this.pic_AnhDaiDien = new System.Windows.Forms.PictureBox();
             this.pnlTrangChu = new System.Windows.Forms.Panel();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             ((System.ComponentModel.ISupportInitialize)(this.pic_DangXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_AnhDaiDien)).BeginInit();
@@ -157,19 +156,11 @@
             this.pnlTrangChu.Controls.Add(this.btnChoThue);
             this.pnlTrangChu.Controls.Add(this.btnCapNhat);
             this.pnlTrangChu.Controls.Add(this.lblTenTrangChu);
-            this.pnlTrangChu.Controls.Add(this.guna2GradientPanel1);
             this.pnlTrangChu.Location = new System.Drawing.Point(3, 2);
             this.pnlTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTrangChu.Name = "pnlTrangChu";
             this.pnlTrangChu.Size = new System.Drawing.Size(1468, 146);
             this.pnlTrangChu.TabIndex = 6;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(3, 3);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1465, 140);
-            this.guna2GradientPanel1.TabIndex = 27;
             // 
             // guna2Separator1
             // 
@@ -210,7 +201,6 @@
         private System.Windows.Forms.PictureBox pic_AnhDaiDien;
         private System.Windows.Forms.PictureBox pic_DangXuat;
         private System.Windows.Forms.Panel pnlTrangChu;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }
